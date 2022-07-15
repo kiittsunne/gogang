@@ -11,7 +11,7 @@ const TopBar = () => {
         </Link>
       </div>
       <div className={styles.nav}>
-        <div className="collectionNav">
+        <div className="tripNav">
           <BsSuitHeartFill />
         </div>
         <div className="accountNav">

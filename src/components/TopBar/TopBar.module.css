@@ -2,8 +2,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  align-content: center;
   width: 100vw;
   height: 2.5em;
   background-color: #655cf3;
@@ -14,7 +12,7 @@
   font-family: "Damion", cursive;
   color: white;
   font-size: 1.5em;
-  margin: 0 0 0.15em 2em;
+  margin: 0.1em 0 0.15em 2em;
 }
 
 .homelink {
@@ -28,6 +26,6 @@
   justify-content: space-around;
   font-size: 1.2em;
   color: white;
-  margin: 2em;
   width: 4em;
+  margin: 0.45em 2em 0.15em 0;
 }
