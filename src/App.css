@@ -45,3 +45,7 @@ body {
     transform: rotate(360deg);
   }
 }
+
+.line {
+  display: inline-block;
+}
