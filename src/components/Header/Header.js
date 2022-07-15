@@ -1,5 +1,6 @@
 import React from "react";
 import SearchForm from "../SearchForm/SearchForm";
+import styles from "./Header.module.css";
 
 const Header = (props) => {
   const Greeting = (props) => {
