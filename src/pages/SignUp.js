@@ -4,13 +4,15 @@ import { Link } from "react-router-dom";
 const SignUp = () => {
   const userRef = useRef();
 
-  const [username, setUsername] = useState("");
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
-  const [age, setAge] = useState("");
-  const [gender, setGender] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [user, setUser] = useState({
+    username: "",
+    firstName: "",
+    lastName: "",
+    age: "",
+    gender: "",
+    email: "",
+    password: "",
+  });
   const [success, setSuccess] = useState(false);
 
   useEffect(() => {
@@ -19,15 +21,18 @@ const SignUp = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(username, password);
+    console.log(user);
     setSuccess(true);
-    setUsername("");
-    setFirstName("");
-    setLastName("");
-    setAge("");
-    setGender("");
-    setEmail("");
-    setPassword("");
+    setUser({
+      username: "",
+      firstName: "",
+      lastName: "",
+      age: "",
+      gender: "",
+      email: "",
+      password: "",
+    });
+    console.log(user);
   };
 
   return (
@@ -51,8 +56,8 @@ const SignUp = () => {
               id="username"
               ref={userRef}
               autoComplete="off"
-              onChange={(e) => setUsername(e.target.value)}
-              value={username}
+              onChange={(e) => setUser({ ...user, username: e.target.value })}
+              value={user.username}
               required
             />
 
@@ -62,8 +67,8 @@ const SignUp = () => {
               id="firstname"
               ref={userRef}
               autoComplete="off"
-              onChange={(e) => setFirstName(e.target.value)}
-              value={firstName}
+              onChange={(e) => setUser({ ...user, firstName: e.target.value })}
+              value={user.firstName}
               required
             />
 
@@ -73,8 +78,8 @@ const SignUp = () => {
               id="lastname"
               ref={userRef}
               autoComplete="off"
-              onChange={(e) => setLastName(e.target.value)}
-              value={lastName}
+              onChange={(e) => setUser({ ...user, lastName: e.target.value })}
+              value={user.lastName}
             />
 
             <label htmlFor="age">AGE:</label>
@@ -84,8 +89,8 @@ const SignUp = () => {
               id="age"
               ref={userRef}
               autoComplete="off"
-              onChange={(e) => setAge(e.target.value)}
-              value={age}
+              onChange={(e) => setUser({ ...user, age: e.target.value })}
+              value={user.age}
             />
 
             <label htmlFor="gender">GENDER:</label>
@@ -93,8 +98,8 @@ const SignUp = () => {
               type="text"
               id="gender"
               ref={userRef}
-              onChange={(e) => setGender(e.target.value)}
-              value={gender}
+              onChange={(e) => setUser({ ...user, gender: e.target.value })}
+              value={user.gender}
               required
               list="genders"
             />
@@ -110,8 +115,8 @@ const SignUp = () => {
               id="email"
               ref={userRef}
               autoComplete="off"
-              onChange={(e) => setEmail(e.target.value)}
-              value={email}
+              onChange={(e) => setUser({ ...user, email: e.target.value })}
+              value={user.email}
               required
             />
 
@@ -119,8 +124,8 @@ const SignUp = () => {
             <input
               type="password"
               id="password"
-              onChange={(e) => setPassword(e.target.value)}
-              value={password}
+              onChange={(e) => setUser({ ...user, password: e.target.value })}
+              value={user.password}
               required
             />
 
