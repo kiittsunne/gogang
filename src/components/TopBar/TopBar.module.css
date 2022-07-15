@@ -3,6 +3,29 @@
   flex-direction: row;
   justify-content: space-between;
   width: 100vw;
-  height: 40px;
+  height: 2.5em;
   background-color: #655cf3;
+  padding: 0;
+}
+
+.logo {
+  font-family: "Damion", cursive;
+  color: white;
+  font-size: 1.5em;
+  margin: 0.1em 0 0.15em 2em;
+}
+
+.homelink {
+  text-decoration: none;
+  color: white;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 1.2em;
+  color: white;
+  width: 4em;
+  margin: 0.45em 2em 0.15em 0;
 }
