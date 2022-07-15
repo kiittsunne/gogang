@@ -4,23 +4,17 @@ import { Link } from "react-router-dom";
 import Home from "./Home";
 
 const Login = () => {
-  const emailRef = useRef();
-  const errorRef = useRef();
+  const userRef = useRef();
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [errorMessage, setErrorMessage] = useState("");
   const [success, setSuccess] = useState(false);
 
   useEffect(() => {
-    emailRef.current.focus();
+    userRef.current.focus();
   }, []);
 
-  useEffect(() => {
-    setErrorMessage("");
-  }, [email, password]);
-
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     console.log(email, password);
     setEmail("");
@@ -34,20 +28,17 @@ const Login = () => {
         <Home></Home>
       ) : (
         <section>
-          <p ref={errorRef} aria-live="assertive">
-            {errorMessage}
-          </p>
           <h1>LOG IN</h1>
           <form onSubmit={handleSubmit}>
             <label htmlFor="email">Email:</label>
             <input
               type="email"
               id="email"
-              ref={emailRef}
+              ref={userRef}
+              autoComplete="off"
               onChange={(e) => setEmail(e.target.value)}
               value={email}
               required
-              placeholder="email"
             />
 
             <label htmlFor="password">Password:</label>
@@ -57,15 +48,14 @@ const Login = () => {
               onChange={(e) => setPassword(e.target.value)}
               value={password}
               required
-              placeholder="pwd"
             />
             <button>LOG IN</button>
           </form>
           <p>
             Need an Account?
             <br />
-            <span>
-              <Link to="/signup">Sign Up</Link>
+            <span className="line">
+              <Link to="/signup">SIGN UP</Link>
             </span>
           </p>
         </section>
