@@ -1,0 +1,8 @@
+.topbarContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100vw;
+  height: 40px;
+  background-color: #655cf3;
+}
