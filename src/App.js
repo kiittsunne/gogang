@@ -1,17 +1,20 @@
+import React, { useState, useEffect } from "react";
 import "./App.css";
-import Login from "./components/Login";
-import SignUp from "./components/SignUp";
-import Home from "./components/Home";
+import Login from "./pages/Login";
+import SignUp from "./pages/SignUp";
+import Home from "./pages/Home";
+import TopBar from "./components/TopBar/TopBar";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
+      <TopBar />
       <main>
         <Routes>
-          <Route path="/" element={<Login />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<SignUp />} />
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
         </Routes>
       </main>
     </div>
