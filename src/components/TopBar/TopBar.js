@@ -6,16 +6,20 @@ const TopBar = () => {
   return (
     <div className={styles.topbarContainer}>
       <div className={styles.logo}>
-        <Link to="/" className={styles.homelink}>
+        <Link to="/" className={styles.topbarButton}>
           Go
         </Link>
       </div>
       <div className={styles.nav}>
         <div className="tripNav">
-          <BsSuitHeartFill />
+          <Link to="/trips" className={styles.topbarButton}>
+            <BsSuitHeartFill />
+          </Link>
         </div>
         <div className="accountNav">
-          <BsPersonCircle />
+          <Link to="/account" className={styles.topbarButton}>
+            <BsPersonCircle />
+          </Link>
         </div>
       </div>
     </div>
