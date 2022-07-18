@@ -115,7 +115,7 @@ router.post("/searchresults", auth, async (req, res) => {
 // search results page, add place to trip route
 router.patch("/searchresults", auth, async (req, res) => {
   await Trip.updateOne(
-    { uniqueID: req.body.uniqueID },
+    { _id: req.body._id },
     { $push: { places: req.body.place } },
     { new: true }
   );
@@ -130,22 +130,9 @@ router.post("/trips", auth, async (req, res) => {
   res.json(trips);
 });
 
-const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890";
-
-const genRandomString = (length) => {
-  let result = "";
-  const charsLength = chars.length;
-  for (let i = 0; i < length; i++) {
-    result += chars.charAt(Math.floor(Math.random() * charsLength));
-  }
-
-  return result;
-};
-
 // trips page, create trip route
 router.put("/trips", auth, async (req, res) => {
   await Trip.create({
-    uniqueID: genRandomString(20),
     ownerEmail: req.decoded.email,
     tripName: req.body.tripName,
     places: [],
@@ -157,9 +144,9 @@ router.put("/trips", auth, async (req, res) => {
 
 // delete trip route
 router.delete("/trips", auth, async (req, res) => {
-  const { uniqueID } = req.body;
+  const { _id } = req.body._id;
 
-  await Trip.deleteOne({ uniqueID });
+  await Trip.deleteOne({ _id });
 
   const trips = await Trip.find({ ownerEmail: req.decoded.email });
   res.json(trips);
@@ -169,7 +156,7 @@ router.delete("/trips", auth, async (req, res) => {
 router.patch("/trip/editname", auth, async (req, res) => {
   const response = await Trip.updateOne(
     {
-      uniqueID: req.body.uniqueID,
+      _id: req.body._id,
     },
     {
       tripName: req.body.tripName,
@@ -178,19 +165,19 @@ router.patch("/trip/editname", auth, async (req, res) => {
   );
   console.log(response);
 
-  const trip = await Trip.find({ uniqueID: req.body.uniqueID });
+  const trip = await Trip.find({ _id: req.body._id });
   res.json(trip);
 });
 
 // individual trip page, delete place route
 router.patch("/trip/deleteplace", auth, async (req, res) => {
   await Trip.updateOne(
-    { uniqueID: req.body.uniqueID },
+    { _id: req.body._id },
     { $pull: { places: { xid: req.body.xid } } },
     { new: true }
   );
 
-  const trip = await Trip.find({ uniqueID: req.body.uniqueID });
+  const trip = await Trip.find({ _id: req.body._id });
   res.json(trip);
 });
 

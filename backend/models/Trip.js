@@ -2,11 +2,6 @@ const mongoose = require("mongoose");
 
 const TripSchema = new mongoose.Schema(
   {
-    uniqueID: {
-      type: String,
-      required: true,
-      unique: true,
-    },
     ownerEmail: {
       type: String,
       required: true,
