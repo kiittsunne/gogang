@@ -5,6 +5,7 @@ const router = express.Router();
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const { v4: uuidv4 } = require("uuid");
+const { check, validationResult } = require("express-validator");
 
 const User = require("../models/User");
 const Trip = require("../models/Trip");
@@ -46,40 +47,59 @@ router.post("/login", async (req, res) => {
 });
 
 // signup route
-router.put("/signup", async (req, res) => {
-  try {
-    const userEmail = await User.findOne({ email: req.body.email });
-    if (userEmail) {
-      return res
-        .status(400)
-        .json({ status: "error", message: "duplicate email" });
+router.put(
+  "/signup",
+  [
+    check("email", "email has to be valid").isEmail(),
+    check(
+      "password",
+      "password has to be 8 to 24 characters, and must include uppercase and lowercase letters, a number and at least one of the following special characters: !@#$%"
+    ).matches(/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/),
+    check("username", "username is required").not().isEmpty(),
+    check("firstName", "First name is required").not().isEmpty(),
+    check("age", "Age is required").isNumeric(),
+  ],
+  async (req, res) => {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      return res.status(400).json({ status: "error", error: errors.array() });
     }
+    try {
+      const userEmail = await User.findOne({ email: req.body.email });
+      if (userEmail) {
+        return res
+          .status(400)
+          .json({ status: "error", message: "duplicate email" });
+      }
 
-    const userUsername = await User.findOne({ username: req.body.username });
-    if (userUsername) {
-      return res
-        .status(400)
-        .json({ status: "error", message: "duplicate username" });
+      const userUsername = await User.findOne({ username: req.body.username });
+      if (userUsername) {
+        return res
+          .status(400)
+          .json({ status: "error", message: "duplicate username" });
+      }
+
+      const hash = await bcrypt.hash(req.body.password, 12);
+      const createdUser = await User.create({
+        email: req.body.email,
+        hash,
+        username: req.body.username,
+        firstName: req.body.firstName,
+        lastName: req.body.lastName || "",
+        age: req.body.age,
+        gender: req.body.gender || "",
+      });
+
+      console.log("created user: ", createdUser);
+      res.json({ status: "ok", message: "user created" });
+    } catch (error) {
+      console.log("PUT /signup", error);
+      res
+        .status(409)
+        .json({ status: "error", message: "an error has occured" });
     }
-
-    const hash = await bcrypt.hash(req.body.password, 12);
-    const createdUser = await User.create({
-      email: req.body.email,
-      hash,
-      username: req.body.username,
-      firstName: req.body.firstName,
-      lastName: req.body.lastName || "",
-      age: req.body.age,
-      gender: req.body.gender || "",
-    });
-
-    console.log("created user: ", createdUser);
-    res.json({ status: "ok", message: "user created" });
-  } catch (error) {
-    console.log("PUT /signup", error);
-    res.status(409).json({ status: "error", message: "an error has occured" });
   }
-});
+);
 
 //try catch this
 // account page, user info route
