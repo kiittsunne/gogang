@@ -137,7 +137,7 @@ router.post("/searchresults", auth, async (req, res) => {
 router.patch("/searchresults", auth, async (req, res) => {
  try {
   await Trip.updateOne(
-    { uniqueID: req.body.uniqueID },
+    { _id: req.body._id },
     { $push: { places: req.body.place } },
     { new: true }
   );
@@ -163,7 +163,6 @@ router.post("/trips", auth, async (req, res) => {
 router.put("/trips", auth, async (req, res) => {
  try {
   await Trip.create({
-    uniqueID: genRandomString(20),
     ownerEmail: req.decoded.email,
     tripName: req.body.tripName,
     places: [],
@@ -178,10 +177,11 @@ router.put("/trips", auth, async (req, res) => {
 
 // delete trip route
 router.delete("/trips", auth, async (req, res) => {
- try {
-  const { uniqueID } = req.body;
 
-  await Trip.deleteOne({ uniqueID });
+ try {
+  const { _id } = req.body;
+
+  await Trip.deleteOne({ _id });
 
   const trips = await Trip.find({ ownerEmail: req.decoded.email });
   res.json(trips);
@@ -195,7 +195,7 @@ router.patch("/trip/editname", auth, async (req, res) => {
  try {
   const response = await Trip.updateOne(
     {
-      uniqueID: req.body.uniqueID,
+      _id: req.body._id,
     },
     {
       tripName: req.body.tripName,
@@ -204,7 +204,7 @@ router.patch("/trip/editname", auth, async (req, res) => {
   );
   console.log(response);
 
-  const trip = await Trip.find({ uniqueID: req.body.uniqueID });
+  const trip = await Trip.find({ _id: req.body._id });
   res.json(trip);
 } catch(error) {
   console.log(error.message)
@@ -215,12 +215,12 @@ router.patch("/trip/editname", auth, async (req, res) => {
 router.patch("/trip/deleteplace", auth, async (req, res) => {
  try {
   await Trip.updateOne(
-    { uniqueID: req.body.uniqueID },
+    { _id: req.body._id },
     { $pull: { places: { xid: req.body.xid } } },
     { new: true }
   );
 
-  const trip = await Trip.find({ uniqueID: req.body.uniqueID });
+  const trip = await Trip.find({ _id: req.body._id });
   res.json(trip);
 } catch(error) {
   console.log(error.message)
