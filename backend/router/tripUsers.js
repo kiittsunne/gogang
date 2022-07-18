@@ -10,6 +10,7 @@ const User = require("../models/User");
 const Trip = require("../models/Trip");
 const auth = require("../middleware/auth");
 
+// login route
 router.post("/login", async (req, res) => {
   try {
     const user = await User.findOne({ email: req.body.email });
@@ -44,6 +45,7 @@ router.post("/login", async (req, res) => {
   }
 });
 
+// signup route
 router.put("/signup", async (req, res) => {
   try {
     const userEmail = await User.findOne({ email: req.body.email });
@@ -79,6 +81,7 @@ router.put("/signup", async (req, res) => {
   }
 });
 
+// account page, user info route
 router.post("/account", auth, async (req, res) => {
   const user = await User.find({ email: req.decoded.email }).select(
     "username firstName lastName age email"
@@ -86,8 +89,10 @@ router.post("/account", auth, async (req, res) => {
   res.json(user);
 });
 
+// logout route
 router.get("/logout", auth, async (req, res) => {});
 
+// home page user first name route
 router.post("/home", auth, async (req, res) => {
   const user = await User.find({ email: req.decoded.email }).select(
     "firstName"
@@ -95,16 +100,19 @@ router.post("/home", auth, async (req, res) => {
   res.json(user);
 });
 
+// home page, display trips route
 router.post("/home/trips", auth, async (req, res) => {
   const trips = await Trip.find({ ownerEmail: req.decoded.email });
   res.json(trips);
 });
 
+// search results page, get trips to see whether place is in trip already or not
 router.post("/searchresults", auth, async (req, res) => {
   const trips = await Trip.find({ ownerEmail: req.decoded.email });
   res.json(trips);
 });
 
+// search results page, add place to trip route
 router.patch("/searchresults", auth, async (req, res) => {
   await Trip.updateOne(
     { uniqueID: req.body.uniqueID },
@@ -116,6 +124,7 @@ router.patch("/searchresults", auth, async (req, res) => {
   res.json(trips);
 });
 
+// trips page, display trips route (same as line 103)
 router.post("/trips", auth, async (req, res) => {
   const trips = await Trip.find({ ownerEmail: req.decoded.email });
   res.json(trips);
@@ -133,6 +142,7 @@ const genRandomString = (length) => {
   return result;
 };
 
+// trips page, create trip route
 router.put("/trips", auth, async (req, res) => {
   await Trip.create({
     uniqueID: genRandomString(20),
@@ -145,6 +155,7 @@ router.put("/trips", auth, async (req, res) => {
   res.json(trips);
 });
 
+// delete trip route
 router.delete("/trips", auth, async (req, res) => {
   const { uniqueID } = req.body;
 
@@ -154,6 +165,7 @@ router.delete("/trips", auth, async (req, res) => {
   res.json(trips);
 });
 
+// individual trip page, edit trip name route
 router.patch("/trip/editname", auth, async (req, res) => {
   const response = await Trip.updateOne(
     {
@@ -170,6 +182,7 @@ router.patch("/trip/editname", auth, async (req, res) => {
   res.json(trip);
 });
 
+// individual trip page, delete place route
 router.patch("/trip/deleteplace", auth, async (req, res) => {
   await Trip.updateOne(
     { uniqueID: req.body.uniqueID },
