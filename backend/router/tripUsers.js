@@ -81,39 +81,61 @@ router.put("/signup", async (req, res) => {
   }
 });
 
+//try catch this 
 // account page, user info route
 router.post("/account", auth, async (req, res) => {
+ try {
   const user = await User.find({ email: req.decoded.email }).select(
     "username firstName lastName age email"
   );
   res.json(user);
+  } catch(error) {
+    console.log(error.message)
+  }
 });
 
+//fig this after
 // logout route
 router.get("/logout", auth, async (req, res) => {});
 
+//try catch this
 // home page user first name route
 router.post("/home", auth, async (req, res) => {
+ try {
   const user = await User.find({ email: req.decoded.email }).select(
     "firstName"
   );
   res.json(user);
+} catch(error) {
+  console.log(error.message)
+}
 });
 
+//try catch this 
 // home page, display trips route
 router.post("/home/trips", auth, async (req, res) => {
+ try {
   const trips = await Trip.find({ ownerEmail: req.decoded.email });
   res.json(trips);
+} catch(error) {
+  console.log(error.message)
+}
 });
 
+//try catch this
 // search results page, get trips to see whether place is in trip already or not
 router.post("/searchresults", auth, async (req, res) => {
+ try {
   const trips = await Trip.find({ ownerEmail: req.decoded.email });
   res.json(trips);
+} catch(error) {
+  console.log(error.message)
+}
 });
 
 // search results page, add place to trip route
 router.patch("/searchresults", auth, async (req, res) => {
+ try {
   await Trip.updateOne(
     { uniqueID: req.body.uniqueID },
     { $push: { places: req.body.place } },
@@ -122,28 +144,24 @@ router.patch("/searchresults", auth, async (req, res) => {
 
   const trips = await Trip.find({ ownerEmail: req.decoded.email });
   res.json(trips);
+} catch(error) {
+  console.log(error.message)
+}
 });
 
 // trips page, display trips route (same as line 103)
 router.post("/trips", auth, async (req, res) => {
+ try {
   const trips = await Trip.find({ ownerEmail: req.decoded.email });
   res.json(trips);
+} catch(error) {
+  console.log(error.message)
+}
 });
-
-const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890";
-
-const genRandomString = (length) => {
-  let result = "";
-  const charsLength = chars.length;
-  for (let i = 0; i < length; i++) {
-    result += chars.charAt(Math.floor(Math.random() * charsLength));
-  }
-
-  return result;
-};
 
 // trips page, create trip route
 router.put("/trips", auth, async (req, res) => {
+ try {
   await Trip.create({
     uniqueID: genRandomString(20),
     ownerEmail: req.decoded.email,
@@ -153,20 +171,28 @@ router.put("/trips", auth, async (req, res) => {
 
   const trips = await Trip.find({ ownerEmail: req.decoded.email });
   res.json(trips);
+} catch(error) {
+  console.log(error.message)
+}
 });
 
 // delete trip route
 router.delete("/trips", auth, async (req, res) => {
+ try {
   const { uniqueID } = req.body;
 
   await Trip.deleteOne({ uniqueID });
 
   const trips = await Trip.find({ ownerEmail: req.decoded.email });
   res.json(trips);
+} catch(error) {
+  console.log(error.message)
+}
 });
 
 // individual trip page, edit trip name route
 router.patch("/trip/editname", auth, async (req, res) => {
+ try {
   const response = await Trip.updateOne(
     {
       uniqueID: req.body.uniqueID,
@@ -180,10 +206,14 @@ router.patch("/trip/editname", auth, async (req, res) => {
 
   const trip = await Trip.find({ uniqueID: req.body.uniqueID });
   res.json(trip);
+} catch(error) {
+  console.log(error.message)
+}
 });
 
 // individual trip page, delete place route
 router.patch("/trip/deleteplace", auth, async (req, res) => {
+ try {
   await Trip.updateOne(
     { uniqueID: req.body.uniqueID },
     { $pull: { places: { xid: req.body.xid } } },
@@ -192,6 +222,9 @@ router.patch("/trip/deleteplace", auth, async (req, res) => {
 
   const trip = await Trip.find({ uniqueID: req.body.uniqueID });
   res.json(trip);
+} catch(error) {
+  console.log(error.message)
+}
 });
 
 module.exports = router;
