@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import AuthContext from "../contexts/AuthProvider";
 
 import axios from "../api/axios";
-const LOGIN_URL = "/api/login";
+const loginURL = "/api/login";
 
 const Login = () => {
   const { setAuth } = useContext(AuthContext);
@@ -20,12 +20,12 @@ const Login = () => {
     userRef.current.focus();
   }, []);
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  const handleSubmit = async (event) => {
+    event.preventDefault();
 
     try {
       const response = await axios.post(
-        LOGIN_URL,
+        loginURL,
         JSON.stringify({ email, password }),
         {
           headers: { "Content-Type": "application/json" },
@@ -41,7 +41,7 @@ const Login = () => {
       if (!err?.response) {
         setErrorMessage("No Server Response");
       } else if (err.response?.status === 400) {
-        setErrorMessage("Missing Username or Password");
+        setErrorMessage("Missing Email or Password");
       } else if (err.response?.status === 401) {
         setErrorMessage("Unauthorized");
       } else {
@@ -69,7 +69,7 @@ const Login = () => {
             id="email"
             ref={userRef}
             autoComplete="off"
-            onChange={(e) => setEmail(e.target.value)}
+            onChange={(event) => setEmail(event.target.value)}
             value={email}
             required
           />
@@ -78,7 +78,7 @@ const Login = () => {
           <input
             type="password"
             id="password"
-            onChange={(e) => setPassword(e.target.value)}
+            onChange={(event) => setPassword(event.target.value)}
             value={password}
             required
           />

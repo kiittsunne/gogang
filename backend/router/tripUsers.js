@@ -77,7 +77,7 @@ router.put("/signup", async (req, res) => {
     res.json({ status: "ok", message: "user created" });
   } catch (error) {
     console.log("PUT /signup", error);
-    res.status(400).json({ status: "error", message: "an error has occured" });
+    res.status(409).json({ status: "error", message: "an error has occured" });
   }
 });
 
