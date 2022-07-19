@@ -9,7 +9,8 @@ const loginURL = "/api/login";
 const Login = () => {
   const { setAuth } = useAuth();
   const { loggedIn, setLoggedIn } = useContext(LogInStatus);
-
+  console.log(loggedIn);
+  
   const navigate = useNavigate();
   const location = useLocation();
   const from = location.state?.from?.pathname || "/";
