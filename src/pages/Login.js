@@ -1,16 +1,20 @@
 import React from "react";
-import { useRef, useState, useEffect, useContext } from "react";
-import { Link, useNavigate } from "react-router-dom";
-import AuthContext from "../contexts/AuthProvider";
+import { useRef, useState, useEffect } from "react";
+import useAuth from "../hooks/useAuth";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 
 import axios from "../api/axios";
 const loginURL = "/api/login";
 
-const Login = (props) => {
-  const { setAuth } = useContext(AuthContext);
+const Login = () => {
+  const { setAuth } = useAuth();
+
+  const navigate = useNavigate();
+  const location = useLocation();
+  const from = location.state?.from?.pathname || "/";
+
   const userRef = useRef();
   const errorRef = useRef();
-  const navigate = useNavigate();
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -19,6 +23,10 @@ const Login = (props) => {
   useEffect(() => {
     userRef.current.focus();
   }, []);
+
+  useEffect(() => {
+    setErrorMessage("");
+  }, [email, password]);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -29,6 +37,7 @@ const Login = (props) => {
         JSON.stringify({ email, password }),
         {
           headers: { "Content-Type": "application/json" },
+          withCredentials: true,
         }
       );
       console.log(JSON.stringify(response));
@@ -36,7 +45,7 @@ const Login = (props) => {
       setAuth({ email, password, accessToken });
       setEmail("");
       setPassword("");
-      navigate("/", { replace: true });
+      navigate(from, { replace: true });
     } catch (err) {
       if (!err?.response) {
         setErrorMessage("No Server Response");
