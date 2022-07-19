@@ -116,7 +116,10 @@ router.post("/account", auth, async (req, res) => {
 
 //fig this after
 // logout route
-router.get("/logout", auth, async (req, res) => {});
+router.get("/logout", auth, async (req, res) => {
+  res.cookie("jwt", "", { maxAge: 1 });
+  res.json({ status: "ok", message: "logged out" });
+});
 
 //try catch this
 // home page user first name route
