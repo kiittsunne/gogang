@@ -1,11 +1,6 @@
-import React, { useState, useContext } from "react";
-import { LogInStatus } from "../contexts/LogStatus";
-import { Link } from "react-router-dom";
-
+import React, { useState } from "react";
 
 const Account = () => {
-  const { loggedIn, setLoggedIn } = useContext(LogInStatus);
-
   const [userName, setUserName] = useState("");
   const [givenName, setGivenName] = useState("");
   const [age, setAge] = useState("");
@@ -13,7 +8,7 @@ const Account = () => {
 
   const [error, setError] = useState(null);
 
-  const dbSite = "http://localhost:27017/api/account"
+  const dbSite = "http://localhost:5001/api/account"
 
   const getAlbums = async (url) => {
     try {
@@ -38,9 +33,6 @@ const Account = () => {
 
   getAlbums(dbSite);
 
-  const logOutState = () => {
-    setLoggedIn(false);
-  }
   return (
     <div>
       <h1>Your Account</h1>
@@ -48,9 +40,6 @@ const Account = () => {
       <h3>Name: {givenName}</h3>
       <h3>Age: {age}</h3>
       <h3>Account email: {email}</h3>
-      <Link to="/login">
-        <button onClick={logOutState}>LOG OUT</button>
-      </Link>
     </div>
   );
 };
