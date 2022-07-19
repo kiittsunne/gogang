@@ -9,7 +9,7 @@ import Search from "./pages/Search";
 import Trips from "./pages/Trips";
 import TripPage from "./pages/TripPage";
 import { Routes, Route } from "react-router-dom";
-import Context from "./contexts/contexts2";
+import Context from "./contexts/context";
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(true);
