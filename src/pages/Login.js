@@ -35,7 +35,7 @@ const Login = () => {
     event.preventDefault();
 
     setThis();
-    
+
     try {
       const response = await axios.post(
         loginURL,
@@ -63,11 +63,6 @@ const Login = () => {
       }
       errorRef.current.focus();
     }
-    // if (loggedIn === true) {
-    //   console.log("hello")
-    // } else {
-    //   console.log("not working");
-    // }
   };
 
   return (
