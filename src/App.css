@@ -27,9 +27,9 @@ body {
   height: 4em;
 }
 
-
 * a:link {
   text-decoration: none;
+}
 
 .error-message {
   background-color: lightpink;
