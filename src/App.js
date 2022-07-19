@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import TopBar from "./components/TopBar/TopBar";
 import SignUp from "./pages/SignUp";
@@ -11,6 +11,9 @@ import TripPage from "./pages/TripPage";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
+  const [loggedIn, setLoggedIn] = useState(true);
+
+  if (loggedIn === true) {
   return (
     <div className="App">
       <TopBar />
@@ -28,6 +31,7 @@ function App() {
       <div className="footerSpacer"></div>
     </div>
   );
+  }
 }
 
 export default App;

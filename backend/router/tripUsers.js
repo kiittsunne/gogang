@@ -5,11 +5,13 @@ const router = express.Router();
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const { v4: uuidv4 } = require("uuid");
+const { check, validationResult } = require("express-validator");
 
 const User = require("../models/User");
 const Trip = require("../models/Trip");
 const auth = require("../middleware/auth");
 
+// login route
 router.post("/login", async (req, res) => {
   try {
     const user = await User.findOne({ email: req.body.email });
@@ -31,7 +33,7 @@ router.post("/login", async (req, res) => {
     };
 
     const access = jwt.sign(payload, process.env.ACCESS_SECRET, {
-      expiresIn: "1d",
+      expiresIn: "10m",
       jwtid: uuidv4(),
     });
 
@@ -44,141 +46,204 @@ router.post("/login", async (req, res) => {
   }
 });
 
-router.put("/signup", async (req, res) => {
+// signup route
+router.put(
+  "/signup",
+  [
+    check("email", "email has to be valid").isEmail(),
+    check(
+      "password",
+      "password has to be 8 to 24 characters, and must include uppercase and lowercase letters, a number and at least one of the following special characters: !@#$%"
+    ).matches(/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/),
+    check("username", "username is required").not().isEmpty(),
+    check("firstName", "First name is required").not().isEmpty(),
+    check("age", "Age is required").isNumeric(),
+  ],
+  async (req, res) => {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      return res.status(400).json({ status: "error", error: errors.array() });
+    }
+    try {
+      const userEmail = await User.findOne({ email: req.body.email });
+      if (userEmail) {
+        return res
+          .status(400)
+          .json({ status: "error", message: "duplicate email" });
+      }
+
+      const userUsername = await User.findOne({ username: req.body.username });
+      if (userUsername) {
+        return res
+          .status(400)
+          .json({ status: "error", message: "duplicate username" });
+      }
+
+      const hash = await bcrypt.hash(req.body.password, 12);
+      const createdUser = await User.create({
+        email: req.body.email,
+        hash,
+        username: req.body.username,
+        firstName: req.body.firstName,
+        lastName: req.body.lastName || "",
+        age: req.body.age,
+        gender: req.body.gender || "",
+      });
+
+      console.log("created user: ", createdUser);
+      res.json({ status: "ok", message: "user created" });
+    } catch (error) {
+      console.log("PUT /signup", error);
+      res
+        .status(409)
+        .json({ status: "error", message: "an error has occured" });
+    }
+  }
+);
+
+//try catch this
+// account page, user info route
+router.post("/account", auth, async (req, res) => {
   try {
-    const userEmail = await User.findOne({ email: req.body.email });
-    if (userEmail) {
-      return res
-        .status(400)
-        .json({ status: "error", message: "duplicate email" });
-    }
-
-    const userUsername = await User.findOne({ username: req.body.username });
-    if (userUsername) {
-      return res
-        .status(400)
-        .json({ status: "error", message: "duplicate username" });
-    }
-
-    const hash = await bcrypt.hash(req.body.password, 12);
-    const createdUser = await User.create({
-      email: req.body.email,
-      hash,
-      username: req.body.username,
-      firstName: req.body.firstName,
-      lastName: req.body.lastName || "",
-      age: req.body.age,
-      gender: req.body.gender || "",
-    });
-
-    console.log("created user: ", createdUser);
-    res.json({ status: "ok", message: "user created" });
+    const user = await User.find({ email: req.decoded.email }).select(
+      "username firstName lastName age email"
+    );
+    res.json(user);
   } catch (error) {
-    console.log("PUT /signup", error);
-    res.status(400).json({ status: "error", message: "an error has occured" });
+    console.log(error.message);
   }
 });
 
-router.post("/account", auth, async (req, res) => {
-  const user = await User.find({ email: req.decoded.email }).select(
-    "username firstName lastName age email"
-  );
-  res.json(user);
-});
-
+//fig this after
+// logout route
 router.get("/logout", auth, async (req, res) => {});
 
+//try catch this
+// home page user first name route
 router.post("/home", auth, async (req, res) => {
-  const user = await User.find({ email: req.decoded.email }).select(
-    "firstName"
-  );
-  res.json(user);
-});
-
-router.post("/home/trips", auth, async (req, res) => {
-  const trips = await Trip.find({ ownerEmail: req.decoded.email });
-  res.json(trips);
-});
-
-router.post("/searchresults", auth, async (req, res) => {
-  const trips = await Trip.find({ ownerEmail: req.decoded.email });
-  res.json(trips);
-});
-
-router.patch("/searchresults", auth, async (req, res) => {
-  await Trip.updateOne(
-    { uniqueID: req.body.uniqueID },
-    { $push: { places: req.body.place } },
-    { new: true }
-  );
-
-  const trips = await Trip.find({ ownerEmail: req.decoded.email });
-  res.json(trips);
-});
-
-router.post("/trips", auth, async (req, res) => {
-  const trips = await Trip.find({ ownerEmail: req.decoded.email });
-  res.json(trips);
-});
-
-const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890";
-
-const genRandomString = (length) => {
-  let result = "";
-  const charsLength = chars.length;
-  for (let i = 0; i < length; i++) {
-    result += chars.charAt(Math.floor(Math.random() * charsLength));
+  try {
+    const user = await User.find({ email: req.decoded.email }).select(
+      "firstName"
+    );
+    res.json(user);
+  } catch (error) {
+    console.log(error.message);
   }
+});
 
-  return result;
-};
+//try catch this
+// home page, display trips route
+router.post("/home/trips", auth, async (req, res) => {
+  try {
+    const trips = await Trip.find({ ownerEmail: req.decoded.email });
+    res.json(trips);
+  } catch (error) {
+    console.log(error.message);
+  }
+});
 
+//try catch this
+// search results page, get trips to see whether place is in trip already or not
+router.post("/searchresults", auth, async (req, res) => {
+  try {
+    const trips = await Trip.find({ ownerEmail: req.decoded.email });
+    res.json(trips);
+  } catch (error) {
+    console.log(error.message);
+  }
+});
+
+// search results page, add place to trip route
+router.patch("/searchresults", auth, async (req, res) => {
+  try {
+    await Trip.updateOne(
+      { _id: req.body._id },
+      { $push: { places: req.body.place } },
+      { new: true }
+    );
+
+    const trips = await Trip.find({ ownerEmail: req.decoded.email });
+    res.json(trips);
+  } catch (error) {
+    console.log(error.message);
+  }
+});
+
+// trips page, display trips route (same as line 103)
+router.post("/trips", auth, async (req, res) => {
+  try {
+    const trips = await Trip.find({ ownerEmail: req.decoded.email });
+    res.json(trips);
+  } catch (error) {
+    console.log(error.message);
+  }
+});
+
+// trips page, create trip route
 router.put("/trips", auth, async (req, res) => {
-  await Trip.create({
-    uniqueID: genRandomString(20),
-    ownerEmail: req.decoded.email,
-    tripName: req.body.tripName,
-    places: [],
-  });
-
-  const trips = await Trip.find({ ownerEmail: req.decoded.email });
-  res.json(trips);
-});
-
-router.delete("/trips", auth, async (req, res) => {
-  const { uniqueID } = req.body;
-
-  await Trip.deleteOne({ uniqueID });
-
-  const trips = await Trip.find({ ownerEmail: req.decoded.email });
-  res.json(trips);
-});
-
-router.patch("/trip/editname", auth, async (req, res) => {
-  const response = await Trip.updateOne(
-    {
-      uniqueID: req.body.uniqueID,
-    },
-    {
+  try {
+    await Trip.create({
+      ownerEmail: req.decoded.email,
       tripName: req.body.tripName,
-    },
-    { new: true }
-  );
-  console.log(response);
+      places: [],
+    });
 
-  const trip = await Trip.find({ uniqueID: req.body.uniqueID });
-  res.json(trip);
+    const trips = await Trip.find({ ownerEmail: req.decoded.email });
+    res.json(trips);
+  } catch (error) {
+    console.log(error.message);
+  }
 });
 
-router.patch("/trip/deleteplace", auth, async (req, res) => {
-  await Trip.updateOne(
-    { uniqueID: req.body.uniqueID },
-    { $pull: { places: { xid: req.body.xid } } },
-    { new: true }
-  );
+// delete trip route
+router.delete("/trips", auth, async (req, res) => {
+  try {
+    const { _id } = req.body;
 
-  const trip = await Trip.find({ uniqueID: req.body.uniqueID });
-  res.json(trip);
+    await Trip.deleteOne({ _id });
+
+    const trips = await Trip.find({ ownerEmail: req.decoded.email });
+    res.json(trips);
+  } catch (error) {
+    console.log(error.message);
+  }
+});
+
+// individual trip page, edit trip name route
+router.patch("/trip/editname", auth, async (req, res) => {
+  try {
+    const response = await Trip.updateOne(
+      {
+        _id: req.body._id,
+      },
+      {
+        tripName: req.body.tripName,
+      },
+      { new: true }
+    );
+    console.log(response);
+
+    const trip = await Trip.find({ _id: req.body._id });
+    res.json(trip);
+  } catch (error) {
+    console.log(error.message);
+  }
+});
+
+// individual trip page, delete place route
+router.patch("/trip/deleteplace", auth, async (req, res) => {
+  try {
+    await Trip.updateOne(
+      { _id: req.body._id },
+      { $pull: { places: { xid: req.body.xid } } },
+      { new: true }
+    );
+
+    const trip = await Trip.find({ _id: req.body._id });
+    res.json(trip);
+  } catch (error) {
+    console.log(error.message);
+  }
 });
 
 module.exports = router;
