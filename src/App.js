@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState } from "react";
 import "./App.css";
 import TopBar from "./components/TopBar/TopBar";
 import SignUp from "./pages/SignUp";
@@ -9,13 +9,12 @@ import Search from "./pages/Search";
 import Trips from "./pages/Trips";
 import TripPage from "./pages/TripPage";
 import { Routes, Route } from "react-router-dom";
-import { LogInStatus } from "./contexts/LogStatus";
 
 function App() {
-const [ loggedIn, setLoggedIn ] = useState(false);
+  const [loggedIn, setLoggedIn] = useState(true);
 
+  if (loggedIn === true) {
   return (
-  <LogInStatus.Provider value={{ loggedIn, setLoggedIn }}>
     <div className="App">
       <TopBar />
       <div className="appContainer">
@@ -31,8 +30,8 @@ const [ loggedIn, setLoggedIn ] = useState(false);
       </div>
       <div className="footerSpacer"></div>
     </div>
-  </LogInStatus.Provider>
   );
   }
+}
 
 export default App;

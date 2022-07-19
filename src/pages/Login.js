@@ -1,14 +1,13 @@
 import React from "react";
-import { useRef, useState, useEffect, useContext } from "react";
+import { useRef, useState, useEffect } from "react";
 import useAuth from "../hooks/useAuth";
 import { Link, useNavigate, useLocation } from "react-router-dom";
+
 import axios from "../api/axios";
-import { LogInStatus } from "../contexts/LogStatus";
 const loginURL = "/api/login";
 
 const Login = () => {
   const { setAuth } = useAuth();
-  const { loggedIn, setLoggedIn } = useContext(LogInStatus);
 
   const navigate = useNavigate();
   const location = useLocation();
@@ -29,13 +28,9 @@ const Login = () => {
     setErrorMessage("");
   }, [email, password]);
 
-  const setThis = () => setLoggedIn(true);
-
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-    setThis();
-    
     try {
       const response = await axios.post(
         loginURL,
@@ -63,11 +58,6 @@ const Login = () => {
       }
       errorRef.current.focus();
     }
-    // if (loggedIn === true) {
-    //   console.log("hello")
-    // } else {
-    //   console.log("not working");
-    // }
   };
 
   return (
