@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import TopBar from "./components/TopBar/TopBar";
 import SignUp from "./pages/SignUp";
@@ -10,6 +10,9 @@ import Trips from "./pages/Trips";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
+  const [loggedIn, setLoggedIn] = useState(true);
+
+  if (loggedIn === true) {
   return (
     <div className="App">
       <TopBar />
@@ -22,6 +25,7 @@ function App() {
       </Routes>
     </div>
   );
+  }
 }
 
 export default App;
