@@ -1,13 +1,12 @@
-import React from "react";
-import { useRef, useState, useEffect } from "react";
-import useAuth from "../hooks/useAuth";
+import React, { useRef, useState, useEffect, useContext } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
+import Context from "../contexts/contexts2";
 
 import axios from "../api/axios";
 const loginURL = "/api/login";
 
 const Login = () => {
-  const { setAuth } = useAuth();
+  const context = useContext(Context);
 
   const navigate = useNavigate();
   const location = useLocation();
@@ -36,13 +35,24 @@ const Login = () => {
         loginURL,
         JSON.stringify({ email, password }),
         {
-          headers: { "Content-Type": "application/json" },
+          headers: {
+            "Content-Type": "application/json",
+          },
+
           withCredentials: true,
         }
       );
+      // const response = await fetch("http://localhost:5001/api/login", {
+      //   method: "post",
+      //   body: JSON.stringify({ email, password }),
+      //   headers: {
+      //     "Content-Type": "application/json",
+      //   },
+      // });
       console.log(JSON.stringify(response));
-      const accessToken = response?.access;
-      setAuth({ email, password, accessToken });
+      const accessToken = response?.data?.access;
+      console.log(accessToken);
+      context.setAccessToken(accessToken);
       setEmail("");
       setPassword("");
       navigate(from, { replace: true });
