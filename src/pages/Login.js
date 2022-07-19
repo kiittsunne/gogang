@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect, useContext } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
-import Context from "../contexts/contexts2";
+import Context from "../contexts/context";
 
 import axios from "../api/axios";
 const loginURL = "/api/login";

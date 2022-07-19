@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
-import Context from "../contexts/contexts2";
+import Context from "../contexts/context";
 
 import axios from "../api/axios";
 const accountURL = "/api/account";
