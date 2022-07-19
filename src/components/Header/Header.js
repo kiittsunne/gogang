@@ -1,12 +1,11 @@
 import React from "react";
-import SearchForm from "../SearchForm/SearchForm";
 import styles from "./Header.module.css";
 
 const Header = (props) => {
   const Greeting = (props) => {
     return (
-      <h1>
-        Hello,
+      <h1 className={styles.headerText}>
+        <span className={styles.spanText}>Hello, </span>
         {props.isLoggedIn === true ? (
           <span> {props.username}</span>
         ) : (
@@ -18,20 +17,19 @@ const Header = (props) => {
 
   const CityName = (props) => {
     return (
-      <h1>
-        {props.city}, {props.country}
+      <h1 className={styles.headerText}>
+        {props.city}, <span className={styles.spanText}>{props.country}</span>
       </h1>
     );
   };
 
   return (
-    <div>
+    <div className={styles.headerContainer}>
       {window.location.pathname === "/" ? (
         <Greeting isLoggedIn={false} username={"Suzu"} />
       ) : (
         <CityName city={"Tokyo"} country={"Japan"} />
       )}
-      <SearchForm />
     </div>
   );
 };

@@ -1,0 +1,19 @@
+.headerContainer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 2em auto 1em auto;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.headerText {
+  font-size: 36pt;
+  color: black;
+  margin: 0;
+}
+
+.spanText {
+  font-family: "Damion", cursive;
+  color: var(--violet);
+  font-size: 44pt;
+}

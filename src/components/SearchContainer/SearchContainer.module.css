@@ -1,0 +1,38 @@
+.buttonWrapper {
+  display: flex;
+  flex-direction: row;
+  margin: 1.5em 0 1.5em 0;
+}
+
+.filterButton {
+  background-color: white;
+  color: grey;
+  border: var(--violet) 1px solid;
+  padding: 0.4em;
+  font: inherit;
+  cursor: pointer;
+  outline: var(--violet);
+  border-radius: 10pt;
+  margin-right: 0.5em;
+  transition-duration: 0.4s;
+}
+
+.filterButton:hover {
+  color: white;
+  background-color: var(--violet);
+}
+
+.resultWrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  grid-auto-rows: minmax(180px, auto);
+  gap: 0.5em;
+}
+
+.resultCard {
+  flex: 1 1 200px;
+}

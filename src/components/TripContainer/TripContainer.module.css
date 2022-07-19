@@ -1,0 +1,14 @@
+.tripWrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-auto-rows: minmax(200px, auto);
+  gap: 1em;
+}
+
+.panel {
+  flex: 1 1 200px;
+}

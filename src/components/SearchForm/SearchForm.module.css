@@ -1,0 +1,10 @@
+.searchForm {
+  text-align: left;
+  margin-bottom: 1em;
+}
+
+.searchInput {
+  outline: white;
+  width: 50%;
+  margin-right: 0.5em;
+}
