@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./Header.module.css";
 
 const Header = (props) => {
@@ -23,12 +23,6 @@ const Header = (props) => {
     );
   };
 
-  const [query, setQuery] = useState("");
-  const handleChange = (e) => {
-    e.preventDefault();
-    setQuery(e.target.value);
-  };
-
   return (
     <div className={styles.headerContainer}>
       {window.location.pathname === "/" ? (
@@ -36,18 +30,6 @@ const Header = (props) => {
       ) : (
         <CityName city={"Tokyo"} country={"Japan"} />
       )}
-      <form className={styles.searchForm}>
-        <input
-          autoFocus
-          type="text"
-          name="searchinput"
-          id="searchinput"
-          className={styles.searchInput}
-          placeholder="Which city are we off to?"
-          value={query}
-        />
-        <button type="submit">Go</button>
-      </form>
     </div>
   );
 };

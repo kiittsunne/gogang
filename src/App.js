@@ -7,6 +7,7 @@ import Account from "./pages/Account";
 import Home from "./pages/Home";
 import Search from "./pages/Search";
 import Trips from "./pages/Trips";
+import TripPage from "./pages/TripPage";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -20,9 +21,11 @@ function App() {
           <Route path="/signup" element={<SignUp />} />
           <Route path="/search" element={<Search />} />
           <Route path="/trips" element={<Trips />} />
+          <Route path="/trips/:id" element={<TripPage />} />
           <Route path="/account" element={<Account />} />
         </Routes>
       </div>
+      <div className="footerSpacer"></div>
     </div>
   );
 }

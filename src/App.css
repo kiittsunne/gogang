@@ -22,3 +22,11 @@ body {
   max-width: 80%;
   margin: 0 auto 0 auto;
 }
+
+.footerSpacer {
+  height: 4em;
+}
+
+* a:link {
+  text-decoration: none;
+}

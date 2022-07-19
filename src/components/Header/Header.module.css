@@ -17,13 +17,3 @@
   color: var(--violet);
   font-size: 44pt;
 }
-
-.searchForm {
-  margin: 0 auto 0 auto;
-}
-
-.searchInput {
-  outline: white;
-  width: 50%;
-  margin-right: 0.5em;
-}

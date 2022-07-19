@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styles from "./TripContainer.module.css";
 import Card from "../Card/Card";
 
@@ -8,7 +9,9 @@ const TripContainer = (props) => {
       {props.data.map((place) => {
         return (
           <div className={styles.panel}>
-            <Card data={place} />
+            <Link to={"/trips/" + place}>
+              <Card data={place} />
+            </Link>
           </div>
         );
       })}

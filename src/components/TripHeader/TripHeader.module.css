@@ -1,0 +1,54 @@
+.tripHeaderContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 5em;
+  margin: 1.5em 0 1em 0;
+}
+
+.h1TripHeader {
+  font-size: 34pt;
+  color: black;
+  text-align: left;
+  width: 50%;
+}
+
+.h1TripHeader > .tripSpan {
+  font-family: "Damion", cursive;
+  color: var(--violet);
+  font-size: 44pt;
+}
+
+.h2TripHeader {
+  font-size: 24pt;
+  font-weight: light;
+  color: black;
+  text-align: left;
+  width: 50%;
+  margin: 0;
+}
+
+.h2TripHeader > .tripSpan {
+  font-family: "Damion", cursive;
+  color: var(--violet);
+  font-size: 30pt;
+}
+
+.tripButton {
+  background-color: white;
+  color: grey;
+  border: var(--violet) 1px solid;
+  padding: 0.4em;
+  font: inherit;
+  cursor: pointer;
+  outline: var(--violet);
+  border-radius: 10pt;
+  margin-right: 0.5em;
+  transition-duration: 0.4s;
+}
+
+.tripButton:hover {
+  color: white;
+  background-color: var(--violet);
+}
