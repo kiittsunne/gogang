@@ -2,14 +2,12 @@ import React, { useState, useContext } from "react";
 import Context from "../../contexts/context";
 import styles from "./TripForm.module.css";
 import axios from "../../api/axios";
-import { useNavigate } from "react-router-dom";
 
 const tripsURL = "/api/trips";
 
 const TripForm = (props) => {
   const [tripName, setTripName] = useState("");
   const context = useContext(Context);
-  const navigate = useNavigate();
 
   const handleSubmit = async (event) => {
     event.preventDefault();
