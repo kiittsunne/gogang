@@ -44,7 +44,7 @@ const Header = (props) => {
         <Greeting isLoggedIn={isLoggedIn} username={props.user.username} />
       );
     }
-    if (location.pathname === "/search") {
+    if (location.pathname.includes("search") === true) {
       return <CityName city={city} country={"Japan"} />;
     }
   };

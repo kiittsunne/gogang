@@ -10,7 +10,7 @@ const { check, validationResult } = require("express-validator");
 const User = require("../models/User");
 const Trip = require("../models/Trip");
 const Place = require("../models/Place");
-const seed = require("../models/PlaceSeed.js");
+const seed = require("../models/Seed.js");
 const auth = require("../middleware/auth");
 const { db } = require("../models/Place");
 
