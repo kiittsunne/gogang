@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { SearchContextProvider } from "./contexts/SearchContext";
 import "./App.css";
 import TopBar from "./components/TopBar/TopBar";
 import SignUp from "./pages/SignUp";
@@ -14,23 +15,25 @@ function App() {
   const [loggedIn, setLoggedIn] = useState(true);
 
   if (loggedIn === true) {
-  return (
-    <div className="App">
-      <TopBar />
-      <div className="appContainer">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<SignUp />} />
-          <Route path="/search" element={<Search />} />
-          <Route path="/trips" element={<Trips />} />
-          <Route path="/trips/:id" element={<TripPage />} />
-          <Route path="/account" element={<Account />} />
-        </Routes>
+    return (
+      <div className="App">
+        <TopBar />
+        <SearchContextProvider>
+          <div className="appContainer">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/search" element={<Search />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/signup" element={<SignUp />} />
+              <Route path="/trips" element={<Trips />} />
+              <Route path="/trips/:id" element={<TripPage />} />
+              <Route path="/account" element={<Account />} />
+            </Routes>
+          </div>
+        </SearchContextProvider>
+        <div className="footerSpacer"></div>
       </div>
-      <div className="footerSpacer"></div>
-    </div>
-  );
+    );
   }
 }
 
