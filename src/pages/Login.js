@@ -1,16 +1,19 @@
-import React from "react";
-import { useRef, useState, useEffect, useContext } from "react";
-import { Link, useNavigate } from "react-router-dom";
-import AuthContext from "../contexts/AuthProvider";
+import React, { useRef, useState, useEffect, useContext } from "react";
+import { Link, useNavigate, useLocation } from "react-router-dom";
+import Context from "../contexts/context";
 
 import axios from "../api/axios";
 const loginURL = "/api/login";
 
-const Login = (props) => {
-  const { setAuth } = useContext(AuthContext);
+const Login = () => {
+  const context = useContext(Context);
+
+  const navigate = useNavigate();
+  const location = useLocation();
+  const from = location.state?.from?.pathname || "/";
+
   const userRef = useRef();
   const errorRef = useRef();
-  const navigate = useNavigate();
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -20,6 +23,10 @@ const Login = (props) => {
     userRef.current.focus();
   }, []);
 
+  useEffect(() => {
+    setErrorMessage("");
+  }, [email, password]);
+
   const handleSubmit = async (event) => {
     event.preventDefault();
 
@@ -28,15 +35,27 @@ const Login = (props) => {
         loginURL,
         JSON.stringify({ email, password }),
         {
-          headers: { "Content-Type": "application/json" },
+          headers: {
+            "Content-Type": "application/json",
+          },
+
+          withCredentials: true,
         }
       );
+      // const response = await fetch("http://localhost:5001/api/login", {
+      //   method: "post",
+      //   body: JSON.stringify({ email, password }),
+      //   headers: {
+      //     "Content-Type": "application/json",
+      //   },
+      // });
       console.log(JSON.stringify(response));
-      const accessToken = response?.access;
-      setAuth({ email, password, accessToken });
+      const accessToken = response?.data?.access;
+      console.log(accessToken);
+      context.setAccessToken(accessToken);
       setEmail("");
       setPassword("");
-      navigate("/", { replace: true });
+      navigate(from, { replace: true });
     } catch (err) {
       if (!err?.response) {
         setErrorMessage("No Server Response");

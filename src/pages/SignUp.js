@@ -81,10 +81,24 @@ const SignUp = () => {
         }),
         {
           headers: { "Content-Type": "application/json" },
+          withCredentials: true,
         }
       );
-      // console.log(response?.data);
-      // console.log(response?.accessToken);
+      // const response = await fetch("http://localhost:5001/api/signup", {
+      //   method: "put",
+      //   body: JSON.stringify({
+      //     username,
+      //     firstName,
+      //     lastName,
+      //     age,
+      //     gender,
+      //     email,
+      //     password,
+      //   }),
+      //   headers: {
+      //     "Content-Type": "application/json",
+      //   },
+      // });
       console.log(JSON.stringify(response));
       setSuccess(true);
       setUsername("");

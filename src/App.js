@@ -10,31 +10,32 @@ import Search from "./pages/Search";
 import Trips from "./pages/Trips";
 import TripPage from "./pages/TripPage";
 import { Routes, Route } from "react-router-dom";
+import Context from "./contexts/context";
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(true);
-
-  if (loggedIn === true) {
+  const [accessToken, setAccessToken] = useState("");
     return (
-      <div className="App">
-        <TopBar />
-        <SearchContextProvider>
+      <Context.Provider value={{ accessToken, setAccessToken }}>
+      <SearchContextProvider>
+        <div className="App">
+          <TopBar />
           <div className="appContainer">
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/search" element={<Search />} />
               <Route path="/login" element={<Login />} />
               <Route path="/signup" element={<SignUp />} />
+              <Route path="/search" element={<Search />} />
               <Route path="/trips" element={<Trips />} />
               <Route path="/trips/:id" element={<TripPage />} />
               <Route path="/account" element={<Account />} />
             </Routes>
-          </div>
-        </SearchContextProvider>
+          </div>      
         <div className="footerSpacer"></div>
       </div>
+        </SearchContextProvider>
+      </Context.Provider>
     );
-  }
 }
 
 export default App;
