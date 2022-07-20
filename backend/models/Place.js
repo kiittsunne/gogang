@@ -12,18 +12,18 @@ const PlaceSchema = new mongoose.Schema(
       required: true,
     },
     kinds: {
-        type: String,
-      },
+      type: String,
+    },
     image: {
-        type: String,
-      },
+      type: String,
+    },
     description: {
-        type: String,
-      },
+      type: String,
+    },
     city: {
-        type: String,
-        required: true,
-      }
+      type: String,
+      required: true,
+    },
   },
   { timestamps: true },
   { collection: "gogang places" }

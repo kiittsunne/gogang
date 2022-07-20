@@ -1,0 +1,1963 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "16067972",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5032043,
+          34.6936607
+        ]
+      },
+      "properties": {
+        "xid": "Q7105601",
+        "name": "Osaka Prefectural Nakanoshima Library",
+        "dist": 93.88000347,
+        "rate": 7,
+        "wikidata": "Q7105601",
+        "kinds": "other,unclassified_objects,interesting_places,historic_object"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11972744",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5011749,
+          34.693119
+        ]
+      },
+      "properties": {
+        "xid": "W335757539",
+        "name": "",
+        "dist": 115.36336325,
+        "rate": 6,
+        "osm": "way/335757539",
+        "wikidata": "Q11559697",
+        "kinds": "bridges,architecture,interesting_places,other_bridges"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11964576",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5030365,
+          34.6946411
+        ]
+      },
+      "properties": {
+        "xid": "W437156248",
+        "name": "Suisho Bridge",
+        "dist": 127.24302284,
+        "rate": 3,
+        "osm": "way/437156248",
+        "wikidata": "Q11253549",
+        "kinds": "bridges,architecture,interesting_places,other_bridges"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11975033",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5009918,
+          34.6930084
+        ]
+      },
+      "properties": {
+        "xid": "W437241385",
+        "name": "Yodoya Bridge",
+        "dist": 136.23634578,
+        "rate": 7,
+        "osm": "way/437241385",
+        "wikidata": "Q11559697",
+        "kinds": "bridges,architecture,interesting_places,other_bridges"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11984783",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5011597,
+          34.6947556
+        ]
+      },
+      "properties": {
+        "xid": "W437164539",
+        "name": "Oebashi Bridge",
+        "dist": 146.3956906,
+        "rate": 7,
+        "osm": "way/437164539",
+        "wikidata": "Q11261549",
+        "kinds": "bridges,architecture,interesting_places,other_bridges"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "4666493",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5037384,
+          34.6932755
+        ]
+      },
+      "properties": {
+        "xid": "N5961167705",
+        "name": "Osaka City Central Public Hall",
+        "dist": 151.19238929,
+        "rate": 7,
+        "osm": "node/5961167705",
+        "wikidata": "Q10938355",
+        "kinds": "architecture,historic_architecture,interesting_places,other_buildings_and_structures"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11973492",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5008087,
+          34.6928902
+        ]
+      },
+      "properties": {
+        "xid": "W335757538",
+        "name": "",
+        "dist": 157.10518957,
+        "rate": 6,
+        "osm": "way/335757538",
+        "wikidata": "Q11559697",
+        "kinds": "bridges,architecture,interesting_places,other_bridges"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11964575",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5031128,
+          34.694973
+        ]
+      },
+      "properties": {
+        "xid": "W437156249",
+        "name": "Suisho Bridge",
+        "dist": 160.93853433,
+        "rate": 3,
+        "osm": "way/437156249",
+        "wikidata": "Q11253549",
+        "kinds": "bridges,architecture,interesting_places,other_bridges"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11979706",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5037994,
+          34.693119
+        ]
+      },
+      "properties": {
+        "xid": "W175833992",
+        "name": "Sendannoki Bridge",
+        "dist": 163.28263149,
+        "rate": 3,
+        "osm": "way/175833992",
+        "wikidata": "Q11251521",
+        "kinds": "bridges,architecture,interesting_places,other_bridges"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "8058311",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5039978,
+          34.6935425
+        ]
+      },
+      "properties": {
+        "xid": "W162382613",
+        "name": "Osaka City Central Public Hall",
+        "dist": 168.5878985,
+        "rate": 7,
+        "osm": "way/162382613",
+        "wikidata": "Q10938355",
+        "kinds": "architecture,historic_architecture,interesting_places,other_buildings_and_structures"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11979707",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5037689,
+          34.692646
+        ]
+      },
+      "properties": {
+        "xid": "W437245965",
+        "name": "Sendannoki Bridge",
+        "dist": 189.38520118,
+        "rate": 3,
+        "osm": "way/437245965",
+        "wikidata": "Q11251521",
+        "kinds": "bridges,architecture,interesting_places,other_bridges"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11970556",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5048828,
+          34.6943016
+        ]
+      },
+      "properties": {
+        "xid": "W338646396",
+        "name": "Hokonagashi Bridge",
+        "dist": 255.14852323,
+        "rate": 3,
+        "osm": "way/338646396",
+        "wikidata": "Q11286909",
+        "kinds": "bridges,architecture,interesting_places,other_bridges"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11494730",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5050201,
+          34.6929131
+        ]
+      },
+      "properties": {
+        "xid": "W267344834",
+        "name": "Nakanoshima Park",
+        "dist": 275.88851187,
+        "rate": 3,
+        "osm": "way/267344834",
+        "wikidata": "Q6960289",
+        "kinds": "urban_environment,gardens_and_parks,cultural,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "14457336",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.503006,
+          34.6912003
+        ]
+      },
+      "properties": {
+        "xid": "Q1049405",
+        "name": "Tekijuku",
+        "dist": 291.62019849,
+        "rate": 7,
+        "wikidata": "Q1049405",
+        "kinds": "historic_architecture,architecture,interesting_places,other_buildings_and_structures"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "15367038",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5054016,
+          34.6934586
+        ]
+      },
+      "properties": {
+        "xid": "Q107045764",
+        "name": "飛青磁花生",
+        "dist": 296.67000888,
+        "rate": 5,
+        "wikidata": "Q107045764",
+        "kinds": "other,unclassified_objects,interesting_places,historic_object"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "14910092",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5054016,
+          34.6934586
+        ]
+      },
+      "properties": {
+        "xid": "Q107045772",
+        "name": "油滴天目茶碗",
+        "dist": 296.67000888,
+        "rate": 5,
+        "wikidata": "Q107045772",
+        "kinds": "other,unclassified_objects,interesting_places,historic_object"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11375477",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5054932,
+          34.6934204
+        ]
+      },
+      "properties": {
+        "xid": "W162382612",
+        "name": "Museum of Oriental Ceramics",
+        "dist": 305.07086536,
+        "rate": 3,
+        "osm": "way/162382612",
+        "wikidata": "Q11440555",
+        "kinds": "cultural,museums,interesting_places,art_galleries"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11973488",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4985352,
+          34.6948357
+        ]
+      },
+      "properties": {
+        "xid": "W477082934",
+        "name": "Nakanoshima Garden Bridge",
+        "dist": 355.4603007,
+        "rate": 3,
+        "osm": "way/477082934",
+        "wikidata": "Q17229466",
+        "kinds": "bridges,architecture,interesting_places,other_bridges"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "15844616",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5041656,
+          34.6909447
+        ]
+      },
+      "properties": {
+        "xid": "Q11322150",
+        "name": "トレードピア淀屋橋",
+        "dist": 359.66092462,
+        "rate": 3,
+        "wikidata": "Q11322150",
+        "kinds": "skyscrapers,architecture,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "15844676",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4980774,
+          34.6938057
+        ]
+      },
+      "properties": {
+        "xid": "Q11362862",
+        "name": "中之島セントラルタワー",
+        "dist": 375.46704266,
+        "rate": 2,
+        "wikidata": "Q11362862",
+        "kinds": "skyscrapers,architecture,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "16072843",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4973907,
+          34.6937218
+        ]
+      },
+      "properties": {
+        "xid": "Q11440017",
+        "name": "大阪三井物産ビル",
+        "dist": 438.98952056,
+        "rate": 3,
+        "wikidata": "Q11440017",
+        "kinds": "skyscrapers,architecture,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "14473517",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5012512,
+          34.6977539
+        ]
+      },
+      "properties": {
+        "xid": "Q11256577",
+        "name": "Aioi Nissay Dowa Insurance Phoenix Tower",
+        "dist": 453.2638585,
+        "rate": 3,
+        "wikidata": "Q11256577",
+        "kinds": "skyscrapers,architecture,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "14701842",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5012512,
+          34.6977539
+        ]
+      },
+      "properties": {
+        "xid": "Q11306705",
+        "name": "ザ・フェニックスホール",
+        "dist": 453.26991167,
+        "rate": 2,
+        "wikidata": "Q11306705",
+        "kinds": "concert_halls,cultural,theatres_and_entertainments,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11385965",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5037689,
+          34.6895103
+        ]
+      },
+      "properties": {
+        "xid": "W233321116",
+        "name": "UCCJ Naniwa Church",
+        "dist": 491.49270454,
+        "rate": 3,
+        "osm": "way/233321116",
+        "wikidata": "Q11507802",
+        "kinds": "religion,churches,interesting_places,other_churches"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "16060792",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4967499,
+          34.6935272
+        ]
+      },
+      "properties": {
+        "xid": "Q3335339",
+        "name": "Nakanoshima Festival Tower",
+        "dist": 498.09190542,
+        "rate": 3,
+        "wikidata": "Q3335339",
+        "kinds": "skyscrapers,architecture,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11201641",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5063782,
+          34.6907425
+        ]
+      },
+      "properties": {
+        "xid": "W232787012",
+        "name": "新井ビル",
+        "dist": 508.63527273,
+        "rate": 3,
+        "osm": "way/232787012",
+        "wikidata": "Q11501141",
+        "kinds": "architecture,historic_architecture,interesting_places,other_buildings_and_structures"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11686623",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4965515,
+          34.6933441
+        ]
+      },
+      "properties": {
+        "xid": "N2574538383",
+        "name": "Osaka Festival Hall",
+        "dist": 517.9298802,
+        "rate": 3,
+        "osm": "node/2574538383",
+        "wikidata": "Q5445711",
+        "kinds": "cultural,theatres_and_entertainments,interesting_places,music_venues"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "14474198",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5018311,
+          34.6890564
+        ]
+      },
+      "properties": {
+        "xid": "Q11614656",
+        "name": "Shibakawa Building",
+        "dist": 520.6379827,
+        "rate": 7,
+        "wikidata": "Q11614656",
+        "kinds": "historic_architecture,architecture,interesting_places,other_buildings_and_structures"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11503899",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5077667,
+          34.6924324
+        ]
+      },
+      "properties": {
+        "xid": "W54037338",
+        "name": "Nakanoshima Park",
+        "dist": 532.74281502,
+        "rate": 3,
+        "osm": "way/54037338",
+        "wikidata": "Q6960289",
+        "kinds": "urban_environment,gardens_and_parks,cultural,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "15844781",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5074768,
+          34.6917496
+        ]
+      },
+      "properties": {
+        "xid": "Q11402358",
+        "name": "Kitahama Retro Building",
+        "dist": 532.80275198,
+        "rate": 7,
+        "wikidata": "Q11402358",
+        "kinds": "historic_architecture,architecture,interesting_places,other_buildings_and_structures"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "15616842",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5010529,
+          34.698555
+        ]
+      },
+      "properties": {
+        "xid": "Q11538479",
+        "name": "梅新第一生命ビルディング",
+        "dist": 544.09841836,
+        "rate": 2,
+        "wikidata": "Q11538479",
+        "kinds": "skyscrapers,architecture,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "14602093",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5027466,
+          34.6986656
+        ]
+      },
+      "properties": {
+        "xid": "Q41692666",
+        "name": "Hōsei-ji",
+        "dist": 549.06629746,
+        "rate": 3,
+        "wikidata": "Q41692666",
+        "kinds": "religion,buddhist_temples,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "15844557",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4964447,
+          34.6952629
+        ]
+      },
+      "properties": {
+        "xid": "Q11282870",
+        "name": "アクア堂島",
+        "dist": 551.49954301,
+        "rate": 3,
+        "wikidata": "Q11282870",
+        "kinds": "skyscrapers,architecture,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11973491",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.49617,
+          34.6926994
+        ]
+      },
+      "properties": {
+        "xid": "W523143342",
+        "name": "肥後橋",
+        "dist": 563.16397854,
+        "rate": 2,
+        "osm": "way/523143342",
+        "wikidata": "Q11288739",
+        "kinds": "bridges,architecture,interesting_places,other_bridges"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11969203",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4958344,
+          34.6944885
+        ]
+      },
+      "properties": {
+        "xid": "W523121581",
+        "name": "渡辺橋",
+        "dist": 587.28257229,
+        "rate": 3,
+        "osm": "way/523121581",
+        "wikidata": "Q11562345",
+        "kinds": "bridges,architecture,interesting_places,other_bridges"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11650453",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4970856,
+          34.6971092
+        ]
+      },
+      "properties": {
+        "xid": "N4429043418",
+        "name": "Dōjima Yakushidō",
+        "dist": 598.01111259,
+        "rate": 3,
+        "osm": "node/4429043418",
+        "wikidata": "Q11427883",
+        "kinds": "religion,other_temples,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11650452",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4969635,
+          34.6970634
+        ]
+      },
+      "properties": {
+        "xid": "W445480955",
+        "name": "Dōjima Yakushidō",
+        "dist": 603.3183725,
+        "rate": 3,
+        "osm": "way/445480955",
+        "wikidata": "Q11427883",
+        "kinds": "religion,buddhist_temples,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11193708",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5009308,
+          34.6991005
+        ]
+      },
+      "properties": {
+        "xid": "W482761129",
+        "name": "Tsuyuno Tenjin Shrine",
+        "dist": 605.57162627,
+        "rate": 3,
+        "osm": "way/482761129",
+        "wikidata": "Q11660942",
+        "kinds": "religion,other_temples,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11663360",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.496933,
+          34.6970978
+        ]
+      },
+      "properties": {
+        "xid": "W445480957",
+        "name": "Dōjima Yakushidō",
+        "dist": 608.23145463,
+        "rate": 3,
+        "osm": "way/445480957",
+        "wikidata": "Q11427883",
+        "kinds": "religion,buddhist_temples,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11385966",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4956512,
+          34.6924362
+        ]
+      },
+      "properties": {
+        "xid": "W246617745",
+        "name": "山内ビル",
+        "dist": 615.22689547,
+        "rate": 3,
+        "osm": "way/246617745",
+        "wikidata": "Q11466342",
+        "kinds": "architecture,historic_architecture,interesting_places,other_buildings_and_structures"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "15159902",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4964447,
+          34.6969719
+        ]
+      },
+      "properties": {
+        "xid": "Q11427873",
+        "name": "Dojima Avanza",
+        "dist": 636.21378361,
+        "rate": 3,
+        "wikidata": "Q11427873",
+        "kinds": "skyscrapers,architecture,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "14931334",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4992218,
+          34.6989174
+        ]
+      },
+      "properties": {
+        "xid": "Q11441684",
+        "name": "Osaka Ekimae Building No.3",
+        "dist": 635.04867277,
+        "rate": 3,
+        "wikidata": "Q11441684",
+        "kinds": "skyscrapers,architecture,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11188908",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5060272,
+          34.6887932
+        ]
+      },
+      "properties": {
+        "xid": "N3180407485",
+        "name": "Sukunahikona-jinja Shrine",
+        "dist": 652.2974611,
+        "rate": 7,
+        "osm": "node/3180407485",
+        "wikidata": "Q11464751",
+        "kinds": "religion,other_temples,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "14702112",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.500473,
+          34.6879578
+        ]
+      },
+      "properties": {
+        "xid": "Q11441546",
+        "name": "Osaka Gas Building",
+        "dist": 660.26377492,
+        "rate": 7,
+        "wikidata": "Q11441546",
+        "kinds": "historic_architecture,architecture,interesting_places,other_buildings_and_structures"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11592627",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5059967,
+          34.6886368
+        ]
+      },
+      "properties": {
+        "xid": "N6549326466",
+        "name": "Doshōmachi Pharmaceutical and Historical Museum",
+        "dist": 665.48515592,
+        "rate": 3,
+        "osm": "node/6549326466",
+        "wikidata": "Q17214457",
+        "kinds": "science_museums,cultural,museums,interesting_places,history_museums"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11191118",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5022583,
+          34.687542
+        ]
+      },
+      "properties": {
+        "xid": "N1423006333",
+        "name": "Yuki Museum of Art",
+        "dist": 687.43997018,
+        "rate": 3,
+        "osm": "node/1423006333",
+        "wikidata": "Q11563573",
+        "kinds": "cultural,museums,interesting_places,art_galleries"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11791943",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.503006,
+          34.699913
+        ]
+      },
+      "properties": {
+        "xid": "W695774101",
+        "name": "Honden-ji",
+        "dist": 689.22045396,
+        "rate": 3,
+        "osm": "way/695774101",
+        "wikidata": "Q44393592",
+        "kinds": "religion,buddhist_temples,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "16072749",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4970398,
+          34.6983223
+        ]
+      },
+      "properties": {
+        "xid": "Q11401797",
+        "name": "Kitashinchi",
+        "dist": 693.00304479,
+        "rate": 3,
+        "wikidata": "Q11401797",
+        "kinds": "cultural,urban_environment,interesting_places,squares"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "14473862",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5068817,
+          34.688694
+        ]
+      },
+      "properties": {
+        "xid": "Q11463585",
+        "name": "Former Konishi Family Residence",
+        "dist": 706.77436594,
+        "rate": 7,
+        "wikidata": "Q11463585",
+        "kinds": "biographical_museums,historic_house_museums,museums,cultural,interesting_places,history_museums"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11421948",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5042419,
+          34.6998711
+        ]
+      },
+      "properties": {
+        "xid": "W181072243",
+        "name": "Entsū-in",
+        "dist": 705.87573377,
+        "rate": 2,
+        "osm": "way/181072243",
+        "wikidata": "Q41692680",
+        "kinds": "religion,buddhist_temples,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11465534",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4993134,
+          34.6874466
+        ]
+      },
+      "properties": {
+        "xid": "W635299799",
+        "name": "Goryo Jinja Shrine",
+        "dist": 746.04080825,
+        "rate": 2,
+        "osm": "way/635299799",
+        "wikidata": "Q11489357",
+        "kinds": "religion,other_temples,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "15160398",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4949341,
+          34.6969757
+        ]
+      },
+      "properties": {
+        "xid": "Q11639103",
+        "name": "近鉄堂島ビル",
+        "dist": 754.96924825,
+        "rate": 3,
+        "wikidata": "Q11639103",
+        "kinds": "skyscrapers,architecture,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "14480925",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4943085,
+          34.69664
+        ]
+      },
+      "properties": {
+        "xid": "Q17220393",
+        "name": "堂島 ザ・レジデンス マークタワー",
+        "dist": 789.92369681,
+        "rate": 2,
+        "wikidata": "Q17220393",
+        "kinds": "skyscrapers,architecture,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "15616937",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4976654,
+          34.6998596
+        ]
+      },
+      "properties": {
+        "xid": "Q11538590",
+        "name": "Umeda DT Tower",
+        "dist": 795.02602564,
+        "rate": 3,
+        "wikidata": "Q11538590",
+        "kinds": "skyscrapers,architecture,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11983891",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.510025,
+          34.690361
+        ]
+      },
+      "properties": {
+        "xid": "W524398369",
+        "name": "葭屋橋",
+        "dist": 810.70230207,
+        "rate": 3,
+        "osm": "way/524398369",
+        "wikidata": "Q11621163",
+        "kinds": "bridges,architecture,interesting_places,other_bridges"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11960663",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5096283,
+          34.6893234
+        ]
+      },
+      "properties": {
+        "xid": "W602801058",
+        "name": "Korai-bashi Bridge",
+        "dist": 840.55847342,
+        "rate": 3,
+        "osm": "way/602801058",
+        "wikidata": "Q849402",
+        "kinds": "bridges,architecture,interesting_places,other_bridges"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "16073068",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4979401,
+          34.7004433
+        ]
+      },
+      "properties": {
+        "xid": "Q11538597",
+        "name": "Umeda Square Building",
+        "dist": 838.89009836,
+        "rate": 3,
+        "wikidata": "Q11538597",
+        "kinds": "skyscrapers,architecture,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "14689825",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4929962,
+          34.6926994
+        ]
+      },
+      "properties": {
+        "xid": "Q3192722",
+        "name": "KEPCO Building",
+        "dist": 849.01654022,
+        "rate": 3,
+        "wikidata": "Q3192722",
+        "kinds": "skyscrapers,architecture,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "15388005",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4968872,
+          34.7000275
+        ]
+      },
+      "properties": {
+        "xid": "Q11439996",
+        "name": "Osaka Marubiru",
+        "dist": 849.47101072,
+        "rate": 3,
+        "wikidata": "Q11439996",
+        "kinds": "skyscrapers,architecture,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "15844612",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4926453,
+          34.6931648
+        ]
+      },
+      "properties": {
+        "xid": "Q11316951",
+        "name": "Daibiru Honkan Building",
+        "dist": 875.77740401,
+        "rate": 3,
+        "wikidata": "Q11316951",
+        "kinds": "skyscrapers,architecture,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "14931039",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5008392,
+          34.7017517
+        ]
+      },
+      "properties": {
+        "xid": "Q11260756",
+        "name": "うめだ花月",
+        "dist": 897.11937404,
+        "rate": 3,
+        "wikidata": "Q11260756",
+        "kinds": "theatres_and_entertainments,cultural,interesting_places,other_theatres"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11470347",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5088501,
+          34.6996994
+        ]
+      },
+      "properties": {
+        "xid": "W695766290",
+        "name": "Horikawa Ebisu Shrine",
+        "dist": 900.40734871,
+        "rate": 3,
+        "osm": "way/695766290",
+        "wikidata": "Q11427435",
+        "kinds": "religion,other_temples,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11373373",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5040131,
+          34.7017365
+        ]
+      },
+      "properties": {
+        "xid": "N5442751142",
+        "name": "Taiyū-ji",
+        "dist": 902.82037099,
+        "rate": 3,
+        "osm": "node/5442751142",
+        "wikidata": "Q11444501",
+        "kinds": "religion,buddhist_temples,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11973489",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4927216,
+          34.69133
+        ]
+      },
+      "properties": {
+        "xid": "W126895618",
+        "name": "Chikuzen-Bashi, Osaka",
+        "dist": 907.20783218,
+        "rate": 3,
+        "osm": "way/126895618",
+        "wikidata": "Q11602781",
+        "kinds": "bridges,architecture,interesting_places,other_bridges"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "15388012",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4966888,
+          34.7005577
+        ]
+      },
+      "properties": {
+        "xid": "Q11441579",
+        "name": "大阪第一生命ビル",
+        "dist": 907.95900163,
+        "rate": 3,
+        "wikidata": "Q11441579",
+        "kinds": "skyscrapers,architecture,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11742756",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5055084,
+          34.7015343
+        ]
+      },
+      "properties": {
+        "xid": "W695774097",
+        "name": "蓮華寺",
+        "dist": 916.88340643,
+        "rate": 2,
+        "osm": "way/695774097",
+        "wikidata": "Q22120876",
+        "kinds": "religion,buddhist_temples,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11373371",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5043182,
+          34.70187
+        ]
+      },
+      "properties": {
+        "xid": "W611406810",
+        "name": "Taiyū-ji",
+        "dist": 922.86128452,
+        "rate": 3,
+        "osm": "way/611406810",
+        "wikidata": "Q11444501",
+        "kinds": "religion,buddhist_temples,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "5144101",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4935455,
+          34.6893539
+        ]
+      },
+      "properties": {
+        "xid": "N3249298362",
+        "name": "UCCJ Osaka Church",
+        "dist": 928.27540705,
+        "rate": 3,
+        "osm": "node/3249298362",
+        "wikidata": "Q10311902",
+        "kinds": "religion,churches,interesting_places,other_churches"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "15616388",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4920959,
+          34.6947708
+        ]
+      },
+      "properties": {
+        "xid": "Q11236060",
+        "name": "NTTテレパーク堂島第二ビル",
+        "dist": 931.66310525,
+        "rate": 3,
+        "wikidata": "Q11236060",
+        "kinds": "skyscrapers,architecture,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "14931130",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4938965,
+          34.6986656
+        ]
+      },
+      "properties": {
+        "xid": "Q11334798",
+        "name": "Breeze Tower",
+        "dist": 935.85515426,
+        "rate": 3,
+        "wikidata": "Q11334798",
+        "kinds": "skyscrapers,architecture,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "14931712",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5038605,
+          34.6854172
+        ]
+      },
+      "properties": {
+        "xid": "Q11607435",
+        "name": "Mengyo Kaikan",
+        "dist": 936.07137542,
+        "rate": 7,
+        "wikidata": "Q11607435",
+        "kinds": "historic_architecture,architecture,interesting_places,other_buildings_and_structures"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11778249",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4921875,
+          34.691658
+        ]
+      },
+      "properties": {
+        "xid": "W231449189",
+        "name": "The National Museum of Art, Osaka",
+        "dist": 944.30880045,
+        "rate": 3,
+        "osm": "way/231449189",
+        "wikidata": "Q1055037",
+        "kinds": "national_museums,cultural,museums,interesting_places,art_galleries"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11981072",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5117188,
+          34.6904182
+        ]
+      },
+      "properties": {
+        "xid": "W54037337",
+        "name": "Tenjin Bridge",
+        "dist": 948.16800421,
+        "rate": 3,
+        "osm": "way/54037337",
+        "wikidata": "Q11443265",
+        "kinds": "bridges,architecture,interesting_places,other_bridges"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11653375",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.494751,
+          34.6998177
+        ]
+      },
+      "properties": {
+        "xid": "N4843226321",
+        "name": "Osaka Shiki Musical Theater",
+        "dist": 957.82632366,
+        "rate": 3,
+        "osm": "node/4843226321",
+        "wikidata": "Q11440113",
+        "kinds": "cultural,theatres_and_entertainments,interesting_places,other_theatres"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "14931493",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5061035,
+          34.7017517
+        ]
+      },
+      "properties": {
+        "xid": "Q11507798",
+        "name": "日本基督教団東梅田教会",
+        "dist": 958.80811821,
+        "rate": 2,
+        "wikidata": "Q11507798",
+        "kinds": "religion,churches,interesting_places,other_churches"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "14702109",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5001373,
+          34.7022781
+        ]
+      },
+      "properties": {
+        "xid": "Q11440183",
+        "name": "Osaka Fukoku Seimei Building",
+        "dist": 965.44710613,
+        "rate": 3,
+        "wikidata": "Q11440183",
+        "kinds": "skyscrapers,architecture,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11777323",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4963226,
+          34.6864891
+        ]
+      },
+      "properties": {
+        "xid": "W137527128",
+        "name": "Osaka Museum of Science and Technology",
+        "dist": 967.25287032,
+        "rate": 3,
+        "osm": "way/137527128",
+        "wikidata": "Q11441568",
+        "kinds": "science_museums,cultural,museums,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11973496",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5097198,
+          34.6875267
+        ]
+      },
+      "properties": {
+        "xid": "W602801061",
+        "name": "Hirano-bashi Bridge",
+        "dist": 975.75679454,
+        "rate": 3,
+        "osm": "way/602801061",
+        "wikidata": "Q11288784",
+        "kinds": "bridges,architecture,interesting_places,other_bridges"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11973494",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4913483,
+          34.6934242
+        ]
+      },
+      "properties": {
+        "xid": "W151798454",
+        "name": "Tamino-bashi Bridge",
+        "dist": 993.15405841,
+        "rate": 2,
+        "osm": "way/151798454",
+        "wikidata": "Q11577263",
+        "kinds": "bridges,architecture,interesting_places,other_bridges"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11294020",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5126648,
+          34.6960602
+        ]
+      },
+      "properties": {
+        "xid": "W164672867",
+        "name": "Main Build",
+        "dist": 994.43317082,
+        "rate": 7,
+        "osm": "way/164672867",
+        "wikidata": "Q385793",
+        "kinds": "religion,other_temples,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11471091",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4998016,
+          34.6849823
+        ]
+      },
+      "properties": {
+        "xid": "W810442766",
+        "name": "Honganji Temple Tsumura Betsuin",
+        "dist": 995.51978343,
+        "rate": 3,
+        "osm": "way/810442766",
+        "wikidata": "Q11521059",
+        "kinds": "religion,buddhist_temples,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "15616939",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4988098,
+          34.7022781
+        ]
+      },
+      "properties": {
+        "xid": "Q11538646",
+        "name": "梅田阪急ビル",
+        "dist": 996.33442762,
+        "rate": 3,
+        "wikidata": "Q11538646",
+        "kinds": "skyscrapers,architecture,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11285998",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5127563,
+          34.6960907
+        ]
+      },
+      "properties": {
+        "xid": "W363304259",
+        "name": "Ōsaka Tenman-gū",
+        "dist": 1003.89966628,
+        "rate": 7,
+        "osm": "way/363304259",
+        "wikidata": "Q385793",
+        "kinds": "religion,other_temples,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11778833",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5126038,
+          34.6965256
+        ]
+      },
+      "properties": {
+        "xid": "W159288649",
+        "name": "HanjoTei",
+        "dist": 1003.79402342,
+        "rate": 3,
+        "osm": "way/159288649",
+        "wikidata": "Q11442821",
+        "kinds": "cultural,theatres_and_entertainments,interesting_places,other_theatres"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11973490",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4912109,
+          34.693779
+        ]
+      },
+      "properties": {
+        "xid": "W523121580",
+        "name": "田蓑橋",
+        "dist": 1005.644832,
+        "rate": 2,
+        "osm": "way/523121580",
+        "wikidata": "Q11577263",
+        "kinds": "bridges,architecture,interesting_places,other_bridges"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11194446",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5100098,
+          34.7001495
+        ]
+      },
+      "properties": {
+        "xid": "W197993525",
+        "name": "Jōshō-ji",
+        "dist": 1009.842295,
+        "rate": 3,
+        "osm": "way/197993525",
+        "wikidata": "Q11495501",
+        "kinds": "religion,buddhist_temples,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11778248",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4914551,
+          34.6912079
+        ]
+      },
+      "properties": {
+        "xid": "W231449111",
+        "name": "Osaka Science Museum",
+        "dist": 1021.54995192,
+        "rate": 3,
+        "osm": "way/231449111",
+        "wikidata": "Q875709",
+        "kinds": "science_museums,cultural,museums,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "7352584",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4909668,
+          34.6941566
+        ]
+      },
+      "properties": {
+        "xid": "N6362209586",
+        "name": "蛸の松",
+        "dist": 1028.07594744,
+        "rate": 2,
+        "osm": "node/6362209586",
+        "wikidata": "Q11625633",
+        "kinds": "historic,monuments_and_memorials,interesting_places,monuments"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "14931333",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4964142,
+          34.7017212
+        ]
+      },
+      "properties": {
+        "xid": "Q11439969",
+        "name": "South Gate Building",
+        "dist": 1030.9642855,
+        "rate": 3,
+        "wikidata": "Q11439969",
+        "kinds": "skyscrapers,architecture,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "14473500",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4910583,
+          34.6953964
+        ]
+      },
+      "properties": {
+        "xid": "Q11236080",
+        "name": "NTTデータ堂島ビル",
+        "dist": 1036.16214415,
+        "rate": 3,
+        "wikidata": "Q11236080",
+        "kinds": "skyscrapers,architecture,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11745655",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4920654,
+          34.6980057
+        ]
+      },
+      "properties": {
+        "xid": "N6024811139",
+        "name": "Herbis Hall",
+        "dist": 1040.37628769,
+        "rate": 3,
+        "osm": "node/6024811139",
+        "wikidata": "Q11284342",
+        "kinds": "skyscrapers,architecture,cultural,theatres_and_entertainments,interesting_places,other_theatres"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11385968",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5091858,
+          34.6862373
+        ]
+      },
+      "properties": {
+        "xid": "W238069414",
+        "name": "岸本瓦町邸",
+        "dist": 1050.82667472,
+        "rate": 7,
+        "osm": "way/238069414",
+        "wikidata": "Q104904926",
+        "kinds": "architecture,historic_architecture,interesting_places,other_buildings_and_structures"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11663359",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4908447,
+          34.6916428
+        ]
+      },
+      "properties": {
+        "xid": "W399112063",
+        "name": "日本キリスト教会 大阪北教会",
+        "dist": 1064.32997717,
+        "rate": 2,
+        "osm": "way/399112063",
+        "wikidata": "Q17221703",
+        "kinds": "religion,churches,interesting_places,other_churches"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "7075450",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4939728,
+          34.700531
+        ]
+      },
+      "properties": {
+        "xid": "W576976181",
+        "name": "YOSHIMOTO NISHIUMEDA THEATER",
+        "dist": 1064.30216186,
+        "rate": 2,
+        "osm": "way/576976181",
+        "wikidata": "Q38266957",
+        "kinds": "cultural,theatres_and_entertainments,interesting_places,other_theatres"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11949402",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5097656,
+          34.6863785
+        ]
+      },
+      "properties": {
+        "xid": "W602801062",
+        "name": "Ote-bashi Bridge",
+        "dist": 1072.5615398,
+        "rate": 3,
+        "osm": "way/602801062",
+        "wikidata": "Q17227936",
+        "kinds": "bridges,architecture,interesting_places,other_bridges"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "14462203",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4920044,
+          34.6986008
+        ]
+      },
+      "properties": {
+        "xid": "Q3571969",
+        "name": "Meiji Yasuda Life Osaka Umeda Building",
+        "dist": 1077.34491603,
+        "rate": 3,
+        "wikidata": "Q3571969",
+        "kinds": "skyscrapers,architecture,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "15844874",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4904175,
+          34.6944733
+        ]
+      },
+      "properties": {
+        "xid": "Q11440019",
+        "name": "Osaka Nakanoshima National Government Building",
+        "dist": 1080.85833563,
+        "rate": 3,
+        "wikidata": "Q11440019",
+        "kinds": "skyscrapers,architecture,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "15388000",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4930267,
+          34.6998596
+        ]
+      },
+      "properties": {
+        "xid": "Q11440003",
+        "name": "大阪モード学園",
+        "dist": 1078.99702403,
+        "rate": 3,
+        "wikidata": "Q11440003",
+        "kinds": "skyscrapers,architecture,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "15845429",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.499054,
+          34.7031097
+        ]
+      },
+      "properties": {
+        "xid": "Q11656738",
+        "name": "阪急グランドビル",
+        "dist": 1078.25627869,
+        "rate": 3,
+        "wikidata": "Q11656738",
+        "kinds": "skyscrapers,architecture,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "16072731",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4909973,
+          34.6972008
+        ]
+      },
+      "properties": {
+        "xid": "Q11395546",
+        "name": "出入橋駅",
+        "dist": 1093.91964968,
+        "rate": 2,
+        "wikidata": "Q11395546",
+        "kinds": "industrial_facilities,abandoned_railway_stations,interesting_places"
+      }
+    }
+  ]
+}
