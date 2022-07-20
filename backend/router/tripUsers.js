@@ -9,6 +9,8 @@ const { check, validationResult } = require("express-validator");
 
 const User = require("../models/User");
 const Trip = require("../models/Trip");
+const Place = require("../models/Place");
+const Seed = require("../models/Seed.js");
 const auth = require("../middleware/auth");
 
 // login route
@@ -248,5 +250,7 @@ router.patch("/trip/deleteplace", auth, async (req, res) => {
     console.log(error.message);
   }
 });
+
+
 
 module.exports = router;
