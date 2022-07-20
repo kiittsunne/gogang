@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { SearchContextProvider } from "./contexts/SearchContext";
 import "./App.css";
 import TopBar from "./components/TopBar/TopBar";
 import SignUp from "./pages/SignUp";
@@ -14,10 +15,9 @@ import Context from "./contexts/context";
 function App() {
   const [loggedIn, setLoggedIn] = useState(true);
   const [accessToken, setAccessToken] = useState("");
-
-  if (loggedIn === true) {
     return (
       <Context.Provider value={{ accessToken, setAccessToken }}>
+      <SearchContextProvider>
         <div className="App">
           <TopBar />
           <div className="appContainer">
@@ -30,12 +30,12 @@ function App() {
               <Route path="/trips/:id" element={<TripPage />} />
               <Route path="/account" element={<Account />} />
             </Routes>
-          </div>
-          <div className="footerSpacer"></div>
-        </div>
+          </div>      
+        <div className="footerSpacer"></div>
+      </div>
+        </SearchContextProvider>
       </Context.Provider>
     );
-  }
 }
 
 export default App;

@@ -1,7 +1,10 @@
 import React from "react";
+import { useSearchContext } from "../../contexts/SearchContext";
 import styles from "./Header.module.css";
 
 const Header = (props) => {
+  const data = useSearchContext().data;
+
   const Greeting = (props) => {
     return (
       <h1 className={styles.headerText}>
@@ -28,7 +31,7 @@ const Header = (props) => {
       {window.location.pathname === "/" ? (
         <Greeting isLoggedIn={false} username={"Suzu"} />
       ) : (
-        <CityName city={"Tokyo"} country={"Japan"} />
+        <CityName city={"tokyo"} country={"Japan"} />
       )}
     </div>
   );
