@@ -54,11 +54,9 @@ const Account = () => {
       setIsLoading(false);
     }
     fetchData();
-  }, []);
+  }, [context.accessToken]);
 
   const logout = async () => {
-    // if used in more components, this should be in context
-    // axios to /logout endpoint
     const response = await axios.get(logOutURL, {
       headers: {
         "Content-Type": "application/json",

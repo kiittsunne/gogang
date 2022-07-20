@@ -10,7 +10,7 @@ const { check, validationResult } = require("express-validator");
 const User = require("../models/User");
 const Trip = require("../models/Trip");
 const Place = require("../models/Place");
-const Seed = require("../models/Seed.js");
+const seed = require("../models/seed.js");
 const auth = require("../middleware/auth");
 
 // login route
@@ -35,7 +35,7 @@ router.post("/login", async (req, res) => {
     };
 
     const access = jwt.sign(payload, process.env.ACCESS_SECRET, {
-      expiresIn: "10m",
+      expiresIn: "1d",
       jwtid: uuidv4(),
     });
 
@@ -251,6 +251,30 @@ router.patch("/trip/deleteplace", auth, async (req, res) => {
   }
 });
 
+// seed
+router.get("/seedplaces", async (req, res) => {
+  seed.forEach(async (place) => {
+    const createdPlace = await Place.create({
+      xid: place.xid,
+      placeName: place.placeName,
+      kinds: place.kinds || "",
+      image: place.image || "",
+      description: place.description || "",
+      city: place.city,
+    });
+    console.log(createdPlace);
+  });
+  res.json({ status: "ok", message: "seeding successful" });
+});
 
+// display places of a city
+router.post("/city/places", auth, async (req, res) => {
+  try {
+    const places = await Place.find({ city: req.body.city });
+    res.json(places);
+  } catch (error) {
+    console.log(error.message);
+  }
+});
 
 module.exports = router;
