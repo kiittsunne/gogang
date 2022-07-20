@@ -49,10 +49,11 @@ const Login = () => {
       //     "Content-Type": "application/json",
       //   },
       // });
-      console.log(JSON.stringify(response));
+      // console.log(JSON.stringify(response));
       const accessToken = response?.data?.access;
-      console.log(accessToken);
+      // console.log(accessToken);
       context.setAccessToken(accessToken);
+      sessionStorage.setItem("access", accessToken);
       setEmail("");
       setPassword("");
       navigate(from, { replace: true });
@@ -87,7 +88,6 @@ const Login = () => {
             type="email"
             id="email"
             ref={userRef}
-            autoComplete="off"
             onChange={(event) => setEmail(event.target.value)}
             value={email}
             required
