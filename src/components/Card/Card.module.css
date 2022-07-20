@@ -18,6 +18,7 @@
 
 .cardDescription {
   color: grey;
+  text-align: left;
 }
 
 .cardButton {

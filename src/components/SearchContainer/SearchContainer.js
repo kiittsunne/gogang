@@ -1,9 +1,14 @@
 import React from "react";
+import { useSearchContext } from "../../contexts/SearchContext";
 import { Link } from "react-router-dom";
 import styles from "./SearchContainer.module.css";
 import Card from "../Card/Card";
 
 const SearchContainer = (props) => {
+  const data = useSearchContext().data;
+  const imgData = useSearchContext().imgData;
+  console.log(imgData);
+
   // function onlyUnique(value, index, self) {
   //   return self.indexOf(value) === index;
   // }
@@ -17,16 +22,15 @@ const SearchContainer = (props) => {
         })} */}
       </div>
       <div className={styles.resultWrapper}>
-        {/* {data.length === 0
+        {data.length === 0
           ? null
           : data.map((place) => {
               return (
-                // <div className={styles.resultCard}>
-                //   <Card data={place} />
-                // </div>
-                <pre>{place}</pre>
+                <div className={styles.resultCard}>
+                  <Card data={place} />
+                </div>
               );
-            })} */}
+            })}
       </div>
     </div>
   );

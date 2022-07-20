@@ -1,18 +1,23 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
+import { useSearchContext } from "../../contexts/SearchContext";
 import styles from "./Header.module.css";
 
 const Header = (props) => {
   const location = useLocation();
 
+  // check is logged in for <Greeting>
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-
   useEffect(() => {
     window.sessionStorage.getItem("access") === null
       ? setIsLoggedIn(false)
       : setIsLoggedIn(true);
   }, []);
 
+  // check query for <CityName>
+  const city = useSearchContext().query;
+
+  // conditional components
   const Greeting = (props) => {
     return (
       <h1 className={styles.headerText}>
@@ -25,7 +30,6 @@ const Header = (props) => {
       </h1>
     );
   };
-
   const CityName = (props) => {
     return (
       <h1 className={styles.headerText}>
@@ -36,10 +40,12 @@ const Header = (props) => {
 
   const headerCheck = () => {
     if (location.pathname === "/") {
-      return <Greeting isLoggedIn={isLoggedIn} username={"Suzu"} />;
+      return (
+        <Greeting isLoggedIn={isLoggedIn} username={props.user.username} />
+      );
     }
     if (location.pathname === "/search") {
-      return <CityName city={"Tokyo"} country={"Japan"} />;
+      return <CityName city={city} country={"Japan"} />;
     }
   };
 

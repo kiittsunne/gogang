@@ -128,8 +128,8 @@ router.get("/logout", auth, async (req, res) => {
 // home page user first name route
 router.post("/home", auth, async (req, res) => {
   try {
-    const user = await User.find({ email: req.decoded.email }).select(
-      "firstName"
+    const user = await User.findOne({ email: req.decoded.email }).select(
+      "username trips"
     );
     res.json(user);
   } catch (error) {
@@ -262,7 +262,7 @@ router.get("/seedplaces", async (req, res) => {
 });
 
 // display places of a city
-router.post("/city/places", auth, async (req, res) => {
+router.post("/city/places", async (req, res) => {
   try {
     const places = await Place.find({ city: req.body.city });
     res.json(places);

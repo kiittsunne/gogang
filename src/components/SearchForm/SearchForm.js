@@ -4,16 +4,16 @@ import { useNavigate } from "react-router-dom";
 import styles from "./SearchForm.module.css";
 
 const SearchForm = () => {
+  const navigate = useNavigate();
   const handleQuery = useSearchContext().handleQuery;
   const [query, setQuery] = useState("");
-  const navigate = useNavigate();
   const handleChange = (e) => {
     e.preventDefault();
     setQuery(e.target.value);
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    handleQuery(query.split(" ").join("%20").toLowerCase());
+    handleQuery(query[0].toUpperCase() + query.slice(1));
     navigate("/search", { replace: true });
     setQuery("");
   };
