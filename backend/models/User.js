@@ -31,6 +31,9 @@ const UserSchema = new mongoose.Schema(
     gender: {
       type: String,
     },
+    trips: {
+      type: Array,
+    },
   },
   { timestamps: true },
   { collection: "gogang users" }
