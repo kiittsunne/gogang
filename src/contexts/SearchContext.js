@@ -6,7 +6,7 @@ export function useSearchContext() {
 }
 
 export function SearchContextProvider({ children }) {
-  const [query, setQuery] = useState("memphis");
+  const [query, setQuery] = useState("tokyo");
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const handleQuery = (value) => {

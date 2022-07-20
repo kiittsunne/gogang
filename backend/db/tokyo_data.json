@@ -1,0 +1,1650 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "14583657",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.6917114, 35.6894875]
+      },
+      "properties": {
+        "xid": "Q35134652",
+        "name": "Chueigekijo Theater",
+        "dist": 1.42468167,
+        "rate": 1,
+        "wikidata": "Q35134652",
+        "kinds": "cinemas,cultural,theatres_and_entertainments,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "15270321",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.6917114, 35.6894875]
+      },
+      "properties": {
+        "xid": "Q35134697",
+        "name": "Grant Heights Theater",
+        "dist": 1.42468167,
+        "rate": 1,
+        "wikidata": "Q35134697",
+        "kinds": "architecture,historic_architecture,cinemas,cultural,theatres_and_entertainments,interesting_places,destroyed_objects"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "15954435",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.6917114, 35.6894875]
+      },
+      "properties": {
+        "xid": "Q35134725",
+        "name": "Meigaza Theater",
+        "dist": 1.42468167,
+        "rate": 1,
+        "wikidata": "Q35134725",
+        "kinds": "cinemas,cultural,theatres_and_entertainments,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "15270322",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.6917114, 35.6894875]
+      },
+      "properties": {
+        "xid": "Q35134751",
+        "name": "Shingekijo Theater",
+        "dist": 1.42468167,
+        "rate": 1,
+        "wikidata": "Q35134751",
+        "kinds": "cinemas,cultural,theatres_and_entertainments,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "15828317",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.6916962, 35.6893997]
+      },
+      "properties": {
+        "xid": "Q963514",
+        "name": "Tōkaidō",
+        "dist": 11.13218571,
+        "rate": 3,
+        "wikidata": "Q963514",
+        "kinds": "other,unclassified_objects,tourist_object,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "15148375",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.6920013, 35.6879997]
+      },
+      "properties": {
+        "xid": "Q3530518",
+        "name": "Tokyo City Hall Tower II",
+        "dist": 168.48724726,
+        "rate": 3,
+        "wikidata": "Q3530518",
+        "kinds": "skyscrapers,architecture,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11688789",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.6898346, 35.6890717]
+      },
+      "properties": {
+        "xid": "W35863704",
+        "name": "Shinjuku Central Park",
+        "dist": 176.81772113,
+        "rate": 3,
+        "osm": "way/35863704",
+        "wikidata": "Q5364883",
+        "kinds": "urban_environment,gardens_and_parks,cultural,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11189264",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.689621, 35.6900902]
+      },
+      "properties": {
+        "xid": "W54044218",
+        "name": "Shinjuku Niagara Falls",
+        "dist": 200.59677854,
+        "rate": 3,
+        "osm": "way/54044218",
+        "wikidata": "Q78491509",
+        "kinds": "fountains,historic,monuments_and_memorials,urban_environment,cultural,water,natural,interesting_places,waterfalls,sculptures,monuments"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "4765157",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.6936035, 35.6905327]
+      },
+      "properties": {
+        "xid": "N5561328322",
+        "name": "keio plaza hotel tokyo",
+        "dist": 205.64369207,
+        "rate": 3,
+        "osm": "node/5561328322",
+        "wikidata": "Q6383787",
+        "kinds": "skyscrapers,architecture,accomodations,interesting_places,other_hotels"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "12880775",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.6939545, 35.6898804]
+      },
+      "properties": {
+        "xid": "H2468674",
+        "name": "keio plaza hotel tokyo premier grand",
+        "dist": 207.93977521,
+        "rate": 3,
+        "wikidata": "Q6383787",
+        "kinds": "skyscrapers,architecture,accomodations,interesting_places,other_hotels"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11685151",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.6925049, 35.6912613]
+      },
+      "properties": {
+        "xid": "N1420779754",
+        "name": "Memorial Museum for Soldiers, Detainees in Siberia, and Postwar Repatriates",
+        "dist": 208.50674543,
+        "rate": 3,
+        "osm": "node/1420779754",
+        "wikidata": "Q56025796",
+        "kinds": "cultural,museums,interesting_places,history_museums,military_museums"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "15828078",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.6926117, 35.6912651]
+      },
+      "properties": {
+        "xid": "Q863588",
+        "name": "Shinjuku Sumitomo Building",
+        "dist": 211.92715571,
+        "rate": 3,
+        "wikidata": "Q863588",
+        "kinds": "skyscrapers,architecture,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "9153318",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.6943817, 35.6897316]
+      },
+      "properties": {
+        "xid": "N4316519393",
+        "name": "Kyubei Sushi at Keio Plaza Hotel",
+        "dist": 243.1775515,
+        "rate": 3,
+        "osm": "node/4316519393",
+        "wikidata": "Q6383787",
+        "kinds": "skyscrapers,architecture,accomodations,interesting_places,other_hotels,restaurants,foods,tourist_facilities"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "4765148",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.6944122, 35.6898346]
+      },
+      "properties": {
+        "xid": "W116596175",
+        "name": "Keio Plaza Hotel",
+        "dist": 246.94980649,
+        "rate": 3,
+        "osm": "way/116596175",
+        "wikidata": "Q6383787",
+        "kinds": "skyscrapers,architecture,accomodations,interesting_places,other_hotels"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11373730",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.6883392, 35.6902466]
+      },
+      "properties": {
+        "xid": "W95937718",
+        "name": "Juniso Kumano Shrine",
+        "dist": 316.0958322,
+        "rate": 3,
+        "osm": "way/95937718",
+        "wikidata": "Q11568951",
+        "kinds": "religion,other_temples,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "16059223",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.6939087, 35.6918983]
+      },
+      "properties": {
+        "xid": "Q2413330",
+        "name": "Shinjuku Mitsui Building",
+        "dist": 331.95274328,
+        "rate": 3,
+        "wikidata": "Q2413330",
+        "kinds": "skyscrapers,architecture,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11415713",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.6882019, 35.6904755]
+      },
+      "properties": {
+        "xid": "W95937711",
+        "name": "Juniso Kumano Shrine",
+        "dist": 335.62942781,
+        "rate": 3,
+        "osm": "way/95937711",
+        "wikidata": "Q11568951",
+        "kinds": "religion,other_temples,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "15143697",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.6955566, 35.6916656]
+      },
+      "properties": {
+        "xid": "Q1134395",
+        "name": "Shinjuku Center Building",
+        "dist": 423.02588847,
+        "rate": 3,
+        "wikidata": "Q1134395",
+        "kinds": "skyscrapers,architecture,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "15159624",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.6931458, 35.693222]
+      },
+      "properties": {
+        "xid": "Q11227689",
+        "name": "KDDI Building",
+        "dist": 432.75001818,
+        "rate": 3,
+        "wikidata": "Q11227689",
+        "kinds": "skyscrapers,architecture,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "14473565",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.6931458, 35.693222]
+      },
+      "properties": {
+        "xid": "Q11290048",
+        "name": "S-tec Information Building",
+        "dist": 432.75001818,
+        "rate": 3,
+        "wikidata": "Q11290048",
+        "kinds": "skyscrapers,architecture,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "14690327",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.6931458, 35.693222]
+      },
+      "properties": {
+        "xid": "Q3482255",
+        "name": "Shinjuku Monolith Building",
+        "dist": 432.75001818,
+        "rate": 3,
+        "wikidata": "Q3482255",
+        "kinds": "skyscrapers,architecture,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "14473948",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.6931458, 35.693222]
+      },
+      "properties": {
+        "xid": "Q11501788",
+        "name": "新宿アイタウン",
+        "dist": 432.75001818,
+        "rate": 3,
+        "wikidata": "Q11501788",
+        "kinds": "skyscrapers,architecture,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "15845000",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.6931458, 35.693222]
+      },
+      "properties": {
+        "xid": "Q11501803",
+        "name": "Shinjuku First West",
+        "dist": 432.75001818,
+        "rate": 3,
+        "wikidata": "Q11501803",
+        "kinds": "skyscrapers,architecture,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "16061078",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.6931458, 35.693222]
+      },
+      "properties": {
+        "xid": "Q3482251",
+        "name": "Odakyu Dai-ichi Life Building",
+        "dist": 432.75001818,
+        "rate": 3,
+        "wikidata": "Q3482251",
+        "kinds": "skyscrapers,architecture,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "15144074",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.6909485, 35.6856384]
+      },
+      "properties": {
+        "xid": "Q1348023",
+        "name": "Shinjuku Park Tower",
+        "dist": 433.89105743,
+        "rate": 3,
+        "wikidata": "Q1348023",
+        "kinds": "skyscrapers,architecture,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "15380009",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.6931915, 35.6933327]
+      },
+      "properties": {
+        "xid": "Q5364378",
+        "name": "Shinjuku I-Land Tower",
+        "dist": 446.03896449,
+        "rate": 3,
+        "wikidata": "Q5364378",
+        "kinds": "skyscrapers,architecture,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "15828074",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.6931915, 35.6933327]
+      },
+      "properties": {
+        "xid": "Q863639",
+        "name": "Shinjuku NS Building",
+        "dist": 446.03896449,
+        "rate": 3,
+        "wikidata": "Q863639",
+        "kinds": "skyscrapers,architecture,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "15828508",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.695282, 35.6927795]
+      },
+      "properties": {
+        "xid": "Q1048673",
+        "name": "Shinjuku Nomura Building",
+        "dist": 486.36381183,
+        "rate": 3,
+        "wikidata": "Q1048673",
+        "kinds": "skyscrapers,architecture,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "14693853",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.695282, 35.6927795]
+      },
+      "properties": {
+        "xid": "Q5365210",
+        "name": "Shinjuku L Tower",
+        "dist": 486.36381183,
+        "rate": 3,
+        "wikidata": "Q5365210",
+        "kinds": "skyscrapers,architecture,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "14914779",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.6969452, 35.6916656]
+      },
+      "properties": {
+        "xid": "Q1030463",
+        "name": "Mode Gakuen Cocoon Tower",
+        "dist": 531.29264695,
+        "rate": 3,
+        "wikidata": "Q1030463",
+        "kinds": "skyscrapers,architecture,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "16054888",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.696106, 35.6927223]
+      },
+      "properties": {
+        "xid": "Q269261",
+        "name": "Sompo Japan Building",
+        "dist": 535.26618757,
+        "rate": 3,
+        "wikidata": "Q269261",
+        "kinds": "skyscrapers,architecture,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11315997",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.6965485, 35.692585]
+      },
+      "properties": {
+        "xid": "W572498043",
+        "name": "Sompo Museum of Art",
+        "dist": 555.36831083,
+        "rate": 3,
+        "osm": "way/572498043",
+        "wikidata": "Q1614504",
+        "kinds": "cultural,museums,interesting_places,art_galleries"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "14701853",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.6970062, 35.6869431]
+      },
+      "properties": {
+        "xid": "Q11313008",
+        "name": "Space Zero",
+        "dist": 556.49204928,
+        "rate": 3,
+        "wikidata": "Q11313008",
+        "kinds": "theatres_and_entertainments,cultural,interesting_places,other_theatres"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "14701982",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.695755, 35.6943626]
+      },
+      "properties": {
+        "xid": "Q11381742",
+        "name": "Sumitomo Fudosan Nishishinjuku Building",
+        "dist": 651.63000674,
+        "rate": 3,
+        "wikidata": "Q11381742",
+        "kinds": "skyscrapers,architecture,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11597028",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.698761, 35.6909523]
+      },
+      "properties": {
+        "xid": "N6283556981",
+        "name": "The Eye of Shinjuku",
+        "dist": 658.5628747,
+        "rate": 3,
+        "osm": "node/6283556981",
+        "wikidata": "Q801447",
+        "kinds": "cultural,urban_environment,interesting_places,sculptures"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "16072939",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.6965332, 35.6940269]
+      },
+      "properties": {
+        "xid": "Q11481338",
+        "name": "常圓寺",
+        "dist": 665.26627271,
+        "rate": 3,
+        "wikidata": "Q11481338",
+        "kinds": "religion,buddhist_temples,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11601390",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.6921844, 35.6957626]
+      },
+      "properties": {
+        "xid": "W584075992",
+        "name": "Naruko Tenjinsha",
+        "dist": 696.29404989,
+        "rate": 3,
+        "osm": "way/584075992",
+        "wikidata": "Q11495425",
+        "kinds": "religion,other_temples,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "15616846",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.6988678, 35.6866188]
+      },
+      "properties": {
+        "xid": "Q11501806",
+        "name": "Shinjuku Maynds Tower",
+        "dist": 723.03221883,
+        "rate": 2,
+        "wikidata": "Q11501806",
+        "kinds": "skyscrapers,architecture,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "14473685",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.6904755, 35.6960297]
+      },
+      "properties": {
+        "xid": "Q11381740",
+        "name": "住友不動産新宿グランドタワー",
+        "dist": 732.91970055,
+        "rate": 3,
+        "wikidata": "Q11381740",
+        "kinds": "skyscrapers,architecture,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "15387855",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.6985016, 35.6855545]
+      },
+      "properties": {
+        "xid": "Q11378216",
+        "name": "Yoyogi Seminar Tower",
+        "dist": 754.51350451,
+        "rate": 3,
+        "wikidata": "Q11378216",
+        "kinds": "skyscrapers,architecture,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "15616862",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.6893921, 35.6961098]
+      },
+      "properties": {
+        "xid": "Q11501804",
+        "name": "新宿フロントスクエア",
+        "dist": 763.00287223,
+        "rate": 3,
+        "wikidata": "Q11501804",
+        "kinds": "skyscrapers,architecture,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "15616539",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.7002563, 35.6895561]
+      },
+      "properties": {
+        "xid": "Q11349103",
+        "name": "LUMINE the YOSHIMOTO",
+        "dist": 773.02926515,
+        "rate": 3,
+        "wikidata": "Q11349103",
+        "kinds": "theatres_and_entertainments,cultural,interesting_places,other_theatres"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "15387635",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.6991425, 35.6859436]
+      },
+      "properties": {
+        "xid": "Q11226207",
+        "name": "JR南新宿ビル",
+        "dist": 779.62535313,
+        "rate": 3,
+        "wikidata": "Q11226207",
+        "kinds": "skyscrapers,architecture,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "14918886",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.6999969, 35.6873016]
+      },
+      "properties": {
+        "xid": "Q3156958",
+        "name": "JR East Headquarters Building",
+        "dist": 789.08998725,
+        "rate": 3,
+        "wikidata": "Q3156958",
+        "kinds": "skyscrapers,architecture,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11402313",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.6829529, 35.6903572]
+      },
+      "properties": {
+        "xid": "W82624567",
+        "name": "Nikenya Playground",
+        "dist": 798.47539658,
+        "rate": 1,
+        "osm": "way/82624567",
+        "wikidata": "Q42312053",
+        "kinds": "urban_environment,gardens_and_parks,cultural,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11465907",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.6994781, 35.693222]
+      },
+      "properties": {
+        "xid": "N4154282189",
+        "name": "Omoide-yokocho",
+        "dist": 816.07652169,
+        "rate": 3,
+        "osm": "node/4154282189",
+        "wikidata": "Q11501868",
+        "kinds": "other,unclassified_objects,interesting_places,tourist_object"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "15143789",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.6870728, 35.6830902]
+      },
+      "properties": {
+        "xid": "Q1201889",
+        "name": "Tokyo Opera City Tower",
+        "dist": 825.97103367,
+        "rate": 3,
+        "wikidata": "Q1201889",
+        "kinds": "skyscrapers,architecture,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "14690859",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.6873932, 35.6828995]
+      },
+      "properties": {
+        "xid": "Q3788869",
+        "name": "NTT InterCommunication Center",
+        "dist": 829.73417778,
+        "rate": 3,
+        "wikidata": "Q3788869",
+        "kinds": "museums,cultural,interesting_places,art_galleries"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "14474242",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.7001953, 35.6924133]
+      },
+      "properties": {
+        "xid": "Q11630847",
+        "name": "Tsunohazu Girder",
+        "dist": 833.70571246,
+        "rate": 3,
+        "wikidata": "Q11630847",
+        "kinds": "architecture,bridges,interesting_places,viaducts"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11203684",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.7004547, 35.686821]
+      },
+      "properties": {
+        "xid": "N6127218492",
+        "name": "Shinjuku Southern Terrace Winter Illumination",
+        "dist": 845.39986198,
+        "rate": 3,
+        "osm": "node/6127218492",
+        "wikidata": "Q5364749",
+        "kinds": "other,unclassified_objects,interesting_places,tourist_object"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11467760",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.6867523, 35.6830025]
+      },
+      "properties": {
+        "xid": "N1420782618",
+        "name": "Tokyo Opera City Art Gallery",
+        "dist": 848.96606561,
+        "rate": 3,
+        "osm": "node/1420782618",
+        "wikidata": "Q11524090",
+        "kinds": "cultural,museums,interesting_places,art_galleries"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "15315307",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.6964569, 35.6828117]
+      },
+      "properties": {
+        "xid": "Q57966286",
+        "name": "平田神社",
+        "dist": 857.50721883,
+        "rate": 3,
+        "wikidata": "Q57966286",
+        "kinds": "religion,other_temples,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11465905",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.6839752, 35.684948]
+      },
+      "properties": {
+        "xid": "N1934818101",
+        "name": "荘嚴寺",
+        "dist": 863.18695687,
+        "rate": 3,
+        "osm": "node/1934818101",
+        "wikidata": "Q11618896",
+        "kinds": "religion,buddhist_temples,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11986268",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.6998596, 35.693615]
+      },
+      "properties": {
+        "xid": "W542310810",
+        "name": "Shinjuku Big Girder Bridge",
+        "dist": 867.8553523,
+        "rate": 3,
+        "osm": "way/542310810",
+        "wikidata": "Q28684297",
+        "kinds": "bridges,architecture,interesting_places,viaducts"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11978707",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.7000885, 35.6932983]
+      },
+      "properties": {
+        "xid": "W155269543",
+        "name": "Yamanote Line",
+        "dist": 868.04806088,
+        "rate": 3,
+        "osm": "way/155269543",
+        "wikidata": "Q693036",
+        "kinds": "bridges,architecture,interesting_places,other_bridges"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11376308",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.7014771, 35.6903305]
+      },
+      "properties": {
+        "xid": "N4794783928",
+        "name": "Shinjuku Cinema Qualite",
+        "dist": 889.25378131,
+        "rate": 3,
+        "osm": "node/4794783928",
+        "wikidata": "Q28689115",
+        "kinds": "cultural,cinemas,theatres_and_entertainments,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11978706",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.7000122, 35.6938515]
+      },
+      "properties": {
+        "xid": "W155235294",
+        "name": "Yamanote Line",
+        "dist": 892.6647752,
+        "rate": 3,
+        "osm": "way/155235294",
+        "wikidata": "Q693036",
+        "kinds": "bridges,architecture,interesting_places,other_bridges"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "15595659",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.6905975, 35.6814804]
+      },
+      "properties": {
+        "xid": "Q107045147",
+        "name": "太刀〈銘延吉／〉",
+        "dist": 895.4993017,
+        "rate": 5,
+        "wikidata": "Q107045147",
+        "kinds": "other,unclassified_objects,interesting_places,historic_object"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "14451893",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.6905975, 35.6814804]
+      },
+      "properties": {
+        "xid": "Q107045126",
+        "name": "太刀〈銘国行／〉",
+        "dist": 895.4993017,
+        "rate": 5,
+        "wikidata": "Q107045126",
+        "kinds": "other,unclassified_objects,interesting_places,historic_object"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "15366998",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.6905975, 35.6814804]
+      },
+      "properties": {
+        "xid": "Q107045128",
+        "name": "太刀〈銘国行／〉",
+        "dist": 895.4993017,
+        "rate": 5,
+        "wikidata": "Q107045128",
+        "kinds": "other,unclassified_objects,interesting_places,historic_object"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "15616797",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.6973572, 35.6824989]
+      },
+      "properties": {
+        "xid": "Q11470937",
+        "name": "San-ya Station",
+        "dist": 929.9941898,
+        "rate": 2,
+        "wikidata": "Q11470937",
+        "kinds": "industrial_facilities,abandoned_railway_stations,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11465877",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.6858368, 35.6825333]
+      },
+      "properties": {
+        "xid": "N1694095987",
+        "name": "New National Theatre",
+        "dist": 937.93594819,
+        "rate": 3,
+        "osm": "node/1694095987",
+        "wikidata": "Q1056064",
+        "kinds": "cultural,theatres_and_entertainments,interesting_places,opera_houses"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11225169",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.7019653, 35.6912003]
+      },
+      "properties": {
+        "xid": "N4794783930",
+        "name": "Shinjuku Musashinokan",
+        "dist": 946.64277145,
+        "rate": 3,
+        "osm": "node/4794783930",
+        "wikidata": "Q5206990",
+        "kinds": "cultural,cinemas,theatres_and_entertainments,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11189265",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.7021179, 35.692028]
+      },
+      "properties": {
+        "xid": "N2197624238",
+        "name": "kinokuniya",
+        "dist": 982.85626674,
+        "rate": 3,
+        "osm": "node/2197624238",
+        "wikidata": "Q11604957",
+        "kinds": "cultural,theatres_and_entertainments,interesting_places,other_theatres"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11478505",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.6819611, 35.6939926]
+      },
+      "properties": {
+        "xid": "W844286231",
+        "name": "Jōgan-ji",
+        "dist": 1012.92792128,
+        "rate": 3,
+        "osm": "way/844286231",
+        "wikidata": "Q11495806",
+        "kinds": "religion,buddhist_temples,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11964381",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.7012787, 35.6945152]
+      },
+      "properties": {
+        "xid": "W155235354",
+        "name": "Kabukicho Ichibangai-dori Street",
+        "dist": 1029.00494734,
+        "rate": 3,
+        "osm": "way/155235354",
+        "wikidata": "Q665216",
+        "kinds": "cultural,urban_environment,interesting_places,squares"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11833382",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.6816254, 35.6940689]
+      },
+      "properties": {
+        "xid": "N1934810780",
+        "name": "Jōgan-ji",
+        "dist": 1044.58255132,
+        "rate": 3,
+        "osm": "node/1934810780",
+        "wikidata": "Q11495806",
+        "kinds": "religion,buddhist_temples,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "14725572",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.7005615, 35.6955566]
+      },
+      "properties": {
+        "xid": "Q17993908",
+        "name": "Shinjuku Tokyu Milano",
+        "dist": 1045.19922279,
+        "rate": 3,
+        "wikidata": "Q17993908",
+        "kinds": "cinemas,cultural,theatres_and_entertainments,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "15160302",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.7024384, 35.6859703]
+      },
+      "properties": {
+        "xid": "Q11604956",
+        "name": "Kinokuniya Southern Theatre Takashimaya",
+        "dist": 1047.50616385,
+        "rate": 3,
+        "wikidata": "Q11604956",
+        "kinds": "theatres_and_entertainments,cultural,interesting_places,other_theatres"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "14701877",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.6833954, 35.6962357]
+      },
+      "properties": {
+        "xid": "Q11327366",
+        "name": "Harmony Square",
+        "dist": 1060.85138093,
+        "rate": 3,
+        "wikidata": "Q11327366",
+        "kinds": "skyscrapers,architecture,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "14709159",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.7010651, 35.6954041]
+      },
+      "properties": {
+        "xid": "Q17217559",
+        "name": "Shinjuku Joy Cinema",
+        "dist": 1070.18452307,
+        "rate": 2,
+        "wikidata": "Q17217559",
+        "kinds": "theatres_and_entertainments,cultural,interesting_places,other_theatres"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11409024",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.7010651, 35.6954117]
+      },
+      "properties": {
+        "xid": "N4885731749",
+        "name": "Shinjuku BLAZE",
+        "dist": 1070.7427362,
+        "rate": 3,
+        "osm": "node/4885731749",
+        "wikidata": "Q7497617",
+        "kinds": "cultural,theatres_and_entertainments,interesting_places,other_theatres"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11191724",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.7031097, 35.6923904]
+      },
+      "properties": {
+        "xid": "N4851144557",
+        "name": "Kinokuniya Hall",
+        "dist": 1081.19598193,
+        "rate": 3,
+        "osm": "node/4851144557",
+        "wikidata": "Q11604957",
+        "kinds": "cultural,theatres_and_entertainments,interesting_places,other_theatres"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "15394991",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.7011566, 35.6957588]
+      },
+      "properties": {
+        "xid": "Q17217529",
+        "name": "Toa First",
+        "dist": 1101.59725998,
+        "rate": 2,
+        "wikidata": "Q17217529",
+        "kinds": "theatres_and_entertainments,cultural,interesting_places,other_theatres"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "15137833",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.6800537, 35.6924171]
+      },
+      "properties": {
+        "xid": "Q106707233",
+        "name": "霊妙寺",
+        "dist": 1103.41442031,
+        "rate": 2,
+        "wikidata": "Q106707233",
+        "kinds": "religion,other_temples,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "15793867",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.7038879, 35.6904182]
+      },
+      "properties": {
+        "xid": "Q85594372",
+        "name": "新宿シアターモリエール",
+        "dist": 1107.05749475,
+        "rate": 3,
+        "wikidata": "Q85594372",
+        "kinds": "theatres_and_entertainments,cultural,interesting_places,other_theatres"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "14702255",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.7021942, 35.6946373]
+      },
+      "properties": {
+        "xid": "Q11501809",
+        "name": "Shinjuku Loft/Plus One",
+        "dist": 1107.06702687,
+        "rate": 3,
+        "wikidata": "Q11501809",
+        "kinds": "cultural,theatres_and_entertainments,interesting_places,music_venues"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11402361",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.7018738, 35.6950951]
+      },
+      "properties": {
+        "xid": "W820507320",
+        "name": "Godzilla (Gojira)",
+        "dist": 1110.00238592,
+        "rate": 3,
+        "osm": "way/820507320",
+        "wikidata": "Q85763829",
+        "kinds": "historic,monuments_and_memorials,urban_environment,cultural,interesting_places,sculptures,monuments"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "14931048",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.7037201, 35.6916656]
+      },
+      "properties": {
+        "xid": "Q11270346",
+        "name": "Kojima Kikaku",
+        "dist": 1113.52866173,
+        "rate": 2,
+        "wikidata": "Q11270346",
+        "kinds": "theatres_and_entertainments,cultural,interesting_places,other_theatres"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11281545",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.7017212, 35.6953812]
+      },
+      "properties": {
+        "xid": "N8365843578",
+        "name": "Kabukicho 1-chome",
+        "dist": 1116.71036082,
+        "rate": 3,
+        "osm": "node/8365843578",
+        "wikidata": "Q665216",
+        "kinds": "urban_environment,cultural,interesting_places,squares"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "7089152",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.7019653, 35.6951523]
+      },
+      "properties": {
+        "xid": "N3623054195",
+        "name": "Toho Cinemas",
+        "dist": 1120.19549032,
+        "rate": 3,
+        "osm": "node/3623054195",
+        "wikidata": "Q17217568",
+        "kinds": "skyscrapers,architecture,cultural,cinemas,theatres_and_entertainments,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "15371170",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.7019806, 35.6952629]
+      },
+      "properties": {
+        "xid": "Q863451",
+        "name": "Shinjuku Koma Theater",
+        "dist": 1128.78552376,
+        "rate": 3,
+        "wikidata": "Q863451",
+        "kinds": "theatres_and_entertainments,cultural,interesting_places,other_theatres"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "15387862",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.683548, 35.6972237]
+      },
+      "properties": {
+        "xid": "Q11381745",
+        "name": "住友中野坂上ビル",
+        "dist": 1130.86869271,
+        "rate": 2,
+        "wikidata": "Q11381745",
+        "kinds": "skyscrapers,architecture,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11281548",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.702713, 35.6945419]
+      },
+      "properties": {
+        "xid": "N1952395613",
+        "name": "Kabukicho",
+        "dist": 1142.12237909,
+        "rate": 3,
+        "osm": "node/1952395613",
+        "wikidata": "Q665216",
+        "kinds": "urban_environment,cultural,interesting_places,squares"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11219330",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.7037506, 35.6926537]
+      },
+      "properties": {
+        "xid": "N5895967100",
+        "name": "Shinjuku Piccadilly",
+        "dist": 1144.95748963,
+        "rate": 3,
+        "osm": "node/5895967100",
+        "wikidata": "Q11501802",
+        "kinds": "cultural,cinemas,theatres_and_entertainments,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11330446",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.702652, 35.6947021]
+      },
+      "properties": {
+        "xid": "W153133272",
+        "name": "Kabukichō",
+        "dist": 1146.6028723,
+        "rate": 3,
+        "osm": "way/153133272",
+        "wikidata": "Q665216",
+        "kinds": "religion,buddhist_temples,urban_environment,cultural,interesting_places,squares"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11650972",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.7044067, 35.6888199]
+      },
+      "properties": {
+        "xid": "N1935344513",
+        "name": "Tenryu-ji Temple",
+        "dist": 1151.81592787,
+        "rate": 3,
+        "osm": "node/1935344513",
+        "wikidata": "Q17219126",
+        "kinds": "religion,buddhist_temples,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11771886",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.6927795, 35.6789589]
+      },
+      "properties": {
+        "xid": "W157415926",
+        "name": "参宮橋公園",
+        "dist": 1173.67413321,
+        "rate": 1,
+        "osm": "way/157415926",
+        "wikidata": "Q42311956",
+        "kinds": "urban_environment,gardens_and_parks,cultural,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "16072655",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.6821442, 35.6967392]
+      },
+      "properties": {
+        "xid": "Q11367540",
+        "name": "中野坂上サンブライトビル",
+        "dist": 1180.95345616,
+        "rate": 2,
+        "wikidata": "Q11367540",
+        "kinds": "skyscrapers,architecture,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "15844651",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.7026367, 35.6953316]
+      },
+      "properties": {
+        "xid": "Q11350627",
+        "name": "LOFT",
+        "dist": 1182.12614241,
+        "rate": 2,
+        "wikidata": "Q11350627",
+        "kinds": "cultural,theatres_and_entertainments,interesting_places,music_venues"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "14687878",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.7032471, 35.6843605]
+      },
+      "properties": {
+        "xid": "Q2090752",
+        "name": "NTT Docomo Yoyogi Building",
+        "dist": 1190.0674427,
+        "rate": 3,
+        "wikidata": "Q2090752",
+        "kinds": "architecture,towers,interesting_places,clock_towers"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11978709",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.7000122, 35.6979218]
+      },
+      "properties": {
+        "xid": "W155269571",
+        "name": "Yamanote Line",
+        "dist": 1198.67772622,
+        "rate": 3,
+        "osm": "way/155269571",
+        "wikidata": "Q693036",
+        "kinds": "bridges,architecture,interesting_places,other_bridges"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11978708",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.700058, 35.6979179]
+      },
+      "properties": {
+        "xid": "W155269555",
+        "name": "Yamanote Line",
+        "dist": 1200.94310894,
+        "rate": 3,
+        "osm": "way/155269555",
+        "wikidata": "Q693036",
+        "kinds": "bridges,architecture,interesting_places,other_bridges"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11281549",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.703125, 35.6952477]
+      },
+      "properties": {
+        "xid": "N4881027723",
+        "name": "Kabukicho",
+        "dist": 1213.73076854,
+        "rate": 3,
+        "osm": "node/4881027723",
+        "wikidata": "Q665216",
+        "kinds": "urban_environment,cultural,interesting_places,squares"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11231815",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.6977844, 35.6993294]
+      },
+      "properties": {
+        "xid": "N4716326381",
+        "name": "Tokyo Mazu Temple",
+        "dist": 1221.29794028,
+        "rate": 2,
+        "osm": "node/4716326381",
+        "wikidata": "Q101064626",
+        "kinds": "religion,other_temples,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11494789",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.6950378, 35.6786041]
+      },
+      "properties": {
+        "xid": "W209695342",
+        "name": "Yoyogi Pony Park",
+        "dist": 1245.91708978,
+        "rate": 1,
+        "osm": "way/209695342",
+        "wikidata": "Q42311965",
+        "kinds": "urban_environment,gardens_and_parks,cultural,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11465914",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.7046509, 35.6939011]
+      },
+      "properties": {
+        "xid": "N7947344865",
+        "name": "Shinjuku Golden Gai",
+        "dist": 1268.92120455,
+        "rate": 1,
+        "osm": "node/7947344865",
+        "wikidata": "Q5363705",
+        "kinds": "other,unclassified_objects,interesting_places,tourist_object"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11465912",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.7046967, 35.6939697]
+      },
+      "properties": {
+        "xid": "W663146158",
+        "name": "Shinjuku Golden Gai",
+        "dist": 1275.36096021,
+        "rate": 1,
+        "osm": "way/663146158",
+        "wikidata": "Q5363705",
+        "kinds": "other,unclassified_objects,interesting_places,tourist_object"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11594190",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.7058411, 35.6912117]
+      },
+      "properties": {
+        "xid": "W153133072",
+        "name": "Suehirotei",
+        "dist": 1292.59528402,
+        "rate": 3,
+        "osm": "way/153133072",
+        "wikidata": "Q11501852",
+        "kinds": "cultural,theatres_and_entertainments,interesting_places,other_theatres"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "11663392",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.7052155, 35.6935921]
+      },
+      "properties": {
+        "xid": "W852487410",
+        "name": "Hanazono Shrine Haiden",
+        "dist": 1303.50797053,
+        "rate": 3,
+        "osm": "way/852487410",
+        "wikidata": "Q3126680",
+        "kinds": "religion,other_temples,interesting_places"
+      }
+    }
+  ]
+}

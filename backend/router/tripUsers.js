@@ -10,8 +10,9 @@ const { check, validationResult } = require("express-validator");
 const User = require("../models/User");
 const Trip = require("../models/Trip");
 const Place = require("../models/Place");
-const seed = require("../models/seed.js");
+const seed = require("../models/PlaceSeed.js");
 const auth = require("../middleware/auth");
+const { db } = require("../models/Place");
 
 // login route
 router.post("/login", async (req, res) => {
@@ -250,21 +251,13 @@ router.patch("/trip/deleteplace", auth, async (req, res) => {
     console.log(error.message);
   }
 });
-
-// seed
 router.get("/seedplaces", async (req, res) => {
-  seed.forEach(async (place) => {
-    const createdPlace = await Place.create({
-      xid: place.xid,
-      placeName: place.placeName,
-      kinds: place.kinds || "",
-      image: place.image || "",
-      description: place.description || "",
-      city: place.city,
-    });
-    console.log(createdPlace);
-  });
-  res.json({ status: "ok", message: "seeding successful" });
+  try {
+    const seedItems = await Place.create(seed);
+    res.send(seedItems);
+  } catch (err) {
+    res.send(err.message);
+  }
 });
 
 // display places of a city

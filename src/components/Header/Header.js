@@ -1,5 +1,5 @@
 import React from "react";
-import { useSearchContext } from "../../contexts/SearchContext";
+import { useSearchContext } from "../../contexts/deadSearchContext";
 import styles from "./Header.module.css";
 
 const Header = (props) => {
