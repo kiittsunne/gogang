@@ -13,8 +13,9 @@ const SearchForm = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    handleQuery(query[0].toUpperCase() + query.slice(1));
-    navigate("/search", { replace: true });
+    const cleanQuery = query[0].toUpperCase() + query.slice(1);
+    handleQuery(cleanQuery);
+    navigate(`/search/${cleanQuery}`, { replace: true });
     setQuery("");
   };
   return (

@@ -2,14 +2,10 @@ const mongoose = require("mongoose");
 
 const PlaceSchema = new mongoose.Schema(
   {
-    xid: {
-      type: String,
-      required: true,
-      unique: true,
-    },
     placeName: {
       type: String,
       required: true,
+      unique: true,
     },
     kinds: {
       type: String,
