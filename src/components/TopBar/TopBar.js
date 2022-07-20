@@ -17,9 +17,15 @@ const TopBar = () => {
           </Link>
         </div>
         <div className="accountNav">
-          <Link to="/account" className={styles.topbarButton}>
-            <BsPersonCircle />
-          </Link>
+          {window.sessionStorage.getItem("access") === null ? (
+            <Link to="/login" className={styles.topbarButton}>
+              <BsPersonCircle />
+            </Link>
+          ) : (
+            <Link to="/account" className={styles.topbarButton}>
+              <BsPersonCircle />
+            </Link>
+          )}
         </div>
       </div>
     </div>

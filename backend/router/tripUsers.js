@@ -251,6 +251,7 @@ router.patch("/trip/deleteplace", auth, async (req, res) => {
     console.log(error.message);
   }
 });
+
 router.get("/seedplaces", async (req, res) => {
   try {
     const seedItems = await Place.create(seed);
@@ -271,3 +272,5 @@ router.post("/city/places", auth, async (req, res) => {
 });
 
 module.exports = router;
+
+// api/city/places => body (city)
