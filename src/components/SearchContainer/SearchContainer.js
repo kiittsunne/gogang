@@ -1,12 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./SearchContainer.module.css";
-import { useSearchContext } from "../../contexts/deadSearchContext";
 import Card from "../Card/Card";
 
 const SearchContainer = (props) => {
-  const data = useSearchContext().data;
-  console.log(data);
   // function onlyUnique(value, index, self) {
   //   return self.indexOf(value) === index;
   // }

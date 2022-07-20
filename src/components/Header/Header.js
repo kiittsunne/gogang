@@ -1,10 +1,7 @@
 import React from "react";
-import { useSearchContext } from "../../contexts/deadSearchContext";
 import styles from "./Header.module.css";
 
 const Header = (props) => {
-  const data = useSearchContext().data;
-
   const Greeting = (props) => {
     return (
       <h1 className={styles.headerText}>
