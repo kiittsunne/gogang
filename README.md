@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+# GoGang
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+A MERN stack travel planner web app for friend groups who never know where to go .A collaboratively designed and built project made as part of the completion requirements of the General Assembly Software Engineering Intensive.
 
-In the project directory, you can run:
+### Technologies used
 
-### `npm start`
+Node
+React - Front-end
+Express - Back-end
+MongoDB - Database
+Mongoose - Schema
+JSON Web Token - Authentication
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### General approach we took
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+We first designed the wireframe for the entire project. We considered the different views we needed from the front end, and from there, derived the necessary backend routes that would link to the front end. From there, we proceeded to create and test the necessary databases to store information in the back end.
 
-### `npm test`
+After laying down the complete back-end database functionality, we then proceeded to iterate on that by integrating our front-end react components to call our back-end data. This was the final step for full application integration.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Installation instructions for dependencies
 
-### `npm run build`
+npm i bcrypt cors dotenv express express-validator jsonwebtoken mongoose uuid @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome axios fetch-jsonp react react-dom react-icons react-router-dom react-scripts web-vitals
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Who are our users, what do they want, and why?
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Our users are people who want to collaborate with their friends whom they are going on a trip with. This app will be a quantifiable way for friends to vote on and decide where to go and what to do on a trip. It also serves to store an itinerary of some sort for the to follow along on their holiday. In a way, the app serves these 2 main functions. Iterative additions to the app could include social functions that enable others to follow along and share these trips with others.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Wireframes – sketches of major views / interfaces in our application
 
-### `npm run eject`
+![This is an image](https://i.imgur.com/5Wyjpje.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Descriptions of any unsolved problems or major hurdles your team had to overcome
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+As it was our first time working collaboratively with others, we ran into communication issues in terms of what was expected from the components that we wanted in our app. This issue was resolved through tactful discussions as well as daily meetings informing each other of our updates on what we have done as well as what we intended to do. Some unsolved problems include the integration of external APIs which were rate limited as well as difficult to access data from. A future change could be to find simpler external APIs or generate the data on the user end.
