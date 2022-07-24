@@ -109,9 +109,20 @@ router.put(
 router.post("/account", auth, async (req, res) => {
   try {
     const user = await User.find({ email: req.decoded.email }).select(
-      "username firstName lastName age email"
+      "username firstName age email"
     );
     res.json(user);
+  } catch (error) {
+    console.log(error.message);
+  }
+});
+
+router.put("/user/trips", auth, async (req, res) => {
+  try {
+    const tripId = req.body._id;
+    const email = req.decoded.email;
+    await User.updateOne({ email: email }, { $push: { trips: tripId } });
+    res.json(User.find({ email: email }).select("username trips"));
   } catch (error) {
     console.log(error.message);
   }

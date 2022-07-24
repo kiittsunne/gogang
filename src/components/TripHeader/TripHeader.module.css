@@ -31,8 +31,8 @@
 
 .h2TripHeader > .tripSpan {
   font-family: "Damion", cursive;
-  color: var(--violet);
-  font-size: 30pt;
+  color: rgba(0, 0, 0, 0.561);
+  font-size: 25pt;
 }
 
 .tripButton {

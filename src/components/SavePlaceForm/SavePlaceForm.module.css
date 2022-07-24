@@ -1,0 +1,66 @@
+.thismodalWrapper {
+  background-color: rgba(0, 0, 0, 0.537);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  overflow-y: auto;
+}
+
+.thistripFormBody {
+  width: 400px;
+  height: 150px;
+  border-radius: 10pt;
+  box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.349);
+  background-color: white;
+  box-sizing: border-box;
+  padding: 1.5em;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.4s;
+}
+
+.thisformHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.thisformClose {
+  background-color: white;
+  color: grey;
+  border: var(--violet) 1px solid;
+  padding: 0 0.4em 0.2em 0.4em;
+  font: inherit;
+  cursor: pointer;
+  outline: var(--violet);
+  border-radius: 7pt;
+  margin-right: 0.5em;
+  transition-duration: 0.4s;
+}
+
+.thisformClose:hover {
+  color: white;
+  background-color: var(--violet);
+}
+
+.thistripForm {
+  margin: 1.3em 0.2em 0.5em 0.2em;
+  height: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.thisnameInput {
+  width: 85%;
+  height: 85%;
+}
+
+.thissubmitInput {
+  height: 100%;
+}

@@ -21,11 +21,13 @@ const Header = (props) => {
   const Greeting = (props) => {
     return (
       <h1 className={styles.headerText}>
-        <span className={styles.spanText}>Hello, </span>
-        {props.isLoggedIn === true ? (
-          <span> {props.username}</span>
+        {window.sessionStorage.getItem("access") != null || undefined ? (
+          <>
+            <span className={styles.spanText}>Hello, </span>
+            <span> {props.username}</span>
+          </>
         ) : (
-          <span> Stranger</span>
+          <span>Hello Stranger</span>
         )}
       </h1>
     );

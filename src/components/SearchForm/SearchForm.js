@@ -27,6 +27,7 @@ const SearchForm = () => {
     >
       <input
         autoFocus
+        autoComplete="off"
         type="text"
         name="searchinput"
         id="searchinput"

@@ -53,6 +53,7 @@ const Login = () => {
       const accessToken = response?.data?.access;
       // console.log(accessToken);
       context.setAccessToken(accessToken);
+      // localStorage.setItem("access", accessToken);
       sessionStorage.setItem("access", accessToken);
       setEmail("");
       setPassword("");

@@ -1,19 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import { useSearchContext } from "../../contexts/SearchContext";
-import { Link } from "react-router-dom";
 import styles from "./SearchContainer.module.css";
 import Card from "../Card/Card";
+import SavePlaceForm from "../SavePlaceForm/SavePlaceForm";
 
-const SearchContainer = (props) => {
+const SearchContainer = () => {
+  const [show, setShow] = useState(false);
+  function handleShow() {
+    show === false ? setShow(true) : setShow(false);
+  }
   const data = useSearchContext().data;
   const imgData = useSearchContext().imgData;
   console.log(imgData);
 
-  // function onlyUnique(value, index, self) {
-  //   return self.indexOf(value) === index;
-  // }
-  // const unique = props.data.filter(onlyUnique);
-
+  const [cardData, setCardData] = useState();
+  const handleCardData = (data) => {
+    setCardData(data);
+  };
   return (
     <div>
       <div className={styles.buttonWrapper}>
@@ -26,9 +29,23 @@ const SearchContainer = (props) => {
           ? null
           : data.map((place) => {
               return (
-                <div className={styles.resultCard}>
-                  <Card data={place} />
-                </div>
+                <>
+                  {show === true ? (
+                    <SavePlaceForm
+                      data={place}
+                      show={show}
+                      handleShow={handleShow}
+                      cardData={cardData}
+                    />
+                  ) : null}
+                  <div className={styles.resultCard}>
+                    <Card
+                      data={place}
+                      handleShow={handleShow}
+                      handleCardData={handleCardData}
+                    />
+                  </div>
+                </>
               );
             })}
       </div>
